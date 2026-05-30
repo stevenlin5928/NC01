@@ -35,3 +35,4 @@
 .\output\gd32f10x_it.o: ..\main.h
 .\output\gd32f10x_it.o: ..\systick.h
 .\output\gd32f10x_it.o: ..\..\gpio\gp_io.h
+.\output\gd32f10x_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

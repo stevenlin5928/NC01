@@ -41,7 +41,7 @@ void do_udp_config(void)
         if((RecvMsg.mac[0]==ConfigMsg.mac[0]) && (RecvMsg.mac[1]==ConfigMsg.mac[1]) && (RecvMsg.mac[2]==ConfigMsg.mac[2]) && 
            (RecvMsg.mac[3]==ConfigMsg.mac[3]) && (RecvMsg.mac[4]==ConfigMsg.mac[4]) && (RecvMsg.mac[5]==ConfigMsg.mac[5]))
         {
-					uint8 msg[]="OK+SETT";
+					char msg[]="OK+SETT";// 2026-5-30 by steven
 					
 					memcpy(ConfigMsg.lip, RecvMsg.lip, 4);
 					memcpy(ConfigMsg.sub, RecvMsg.sub, 4);
@@ -50,7 +50,7 @@ void do_udp_config(void)
           //ConfigMsg = RecvMsg;//获取的配置信息复制到配置结构体
           write_config_to_flash();//将配置信息写入到Flash
 					
-					sendto(SOCK_CONFIG, msg, strlen(msg),bIP, rPort);
+					sendto(SOCK_CONFIG, (uint8 *)msg, strlen(msg),bIP, rPort); // 2026-5-30 by steven
 					delay_ms(300);
           reboot();//软件复位
         }

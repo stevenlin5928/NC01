@@ -38,3 +38,4 @@
 .\output\utility.o: ..\..\Utilities\utility.h
 .\output\utility.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\output\utility.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\utility.o: ..\systick.h

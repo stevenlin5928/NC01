@@ -5,7 +5,7 @@
 #include "gd32f10x.h"
 
 
-void systick_init (uint8 SYSCLK);
+//void systick_init (uint8 SYSCLK);
 void delay_s( uint32 time_s );
 void delay_us(uint32 time_us);
 void delay_ms(uint32 time_ms);

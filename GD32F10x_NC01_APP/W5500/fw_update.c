@@ -54,13 +54,14 @@ void do_fw_update(void)
       }
       else
       {
-				int fmc_state=-1;				
+				// int fmc_state=-1;				
         recv(SOCK_FW, buf, len);
         printf(".");
         for(i=0;i<len;i+=4)
         {
           //FLASH_ProgramWord(flashDest,*(uint32*)((uint32)buf + i));//将接收到的固件程序双字节写进Flash
-					fmc_state=fmc_word_program(flashDest,*(uint32*)((uint32)buf + i));
+					//fmc_state=fmc_word_program(flashDest,*(uint32*)((uint32)buf + i)); 2026-5-30 by steven
+					fmc_word_program(flashDest,*(uint32*)((uint32)buf + i));
           flashDest+=4;
         }
         rxLen+=len;

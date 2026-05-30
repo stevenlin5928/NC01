@@ -36,3 +36,4 @@
 .\output\keypad.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\output\keypad.o: ..\..\W5500\types.h
 .\output\keypad.o: ..\..\max7219\max7219.h
+.\output\keypad.o: ..\..\Utilities\utility.h

@@ -186,8 +186,8 @@ void report_S18F10(uint8_t targetid,uint8_t *lfData,uint8_t lflen,uint32_t sessi
 	//A[1] ceid
 	hsmsbuf[24]=0x41;
 	offset=25;
-	if(lflen<0)
-		lflen=0;
+//	if(lflen<0)  2026-5-30 by steven
+//		lflen=0;
 	if((lflen==0)||(lfData==NULL))
 	{
 		hsmsbuf[offset]=5;

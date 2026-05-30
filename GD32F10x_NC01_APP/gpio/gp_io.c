@@ -274,7 +274,7 @@ int gp_get_in(uint8_t in,uint8_t *value)
 		default:
 			printf("%s pin:%d\n",__func__,in);
 		  return -1;
-			break;
+//			break;
 	}
 	if(status==RESET)
 	{

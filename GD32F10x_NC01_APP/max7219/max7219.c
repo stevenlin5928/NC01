@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "gd32f10x.h"
 #include "max7219.h"
-
+#include "utility.h"  // 👈 加入這行，讓編譯器認識 delay_us
 
 //PA15_SPI3_CS 
 //PB3_SPI3_SCK [2]

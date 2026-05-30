@@ -66,7 +66,6 @@ Section Cross References
     main.o(i._Debug2) refers to printfa.o(i.__0vsprintf) for vsprintf
     main.o(i._Debug2) refers to printfa.o(i.__0sprintf) for __2sprintf
     main.o(i._Debug2) refers to printfa.o(i.__0printf) for __2printf
-    main.o(i._Debug2) refers to main.o(.data) for debug_flag
     main.o(i.before_amkor_nc01_filter) refers to main.o(i._Debug2) for _Debug2
     main.o(i.before_amkor_nc01_filter) refers to secstcp.o(i.send_secs_socket) for send_secs_socket
     main.o(i.before_amkor_nc01_filter) refers to sht2x.o(i.SHT21_ReadTemp) for SHT21_ReadTemp
@@ -351,7 +350,6 @@ Section Cross References
     utility.o(i.mid) refers to strncpy.o(.text) for strncpy
     utility.o(i.ntohl) refers to utility.o(i.htonl) for htonl
     utility.o(i.ntohs) refers to utility.o(i.htons) for htons
-    utility.o(i.systick_init) refers to utility.o(.data) for fac_us
     utility.o(i.validatoi) refers to utility.o(i.c2d) for c2d
     utility.o(i.validatoi) refers to utility.o(i.atoi16) for atoi16
     utility.o(i.verify_ip_address) refers to strcpy.o(.text) for strcpy
@@ -1837,11 +1835,9 @@ Removing Unused input sections from the image.
     Removing utility.o(i.replacetochar), (26 bytes).
     Removing utility.o(i.swapl), (28 bytes).
     Removing utility.o(i.swaps), (14 bytes).
-    Removing utility.o(i.systick_init), (64 bytes).
     Removing utility.o(i.validatoi), (72 bytes).
     Removing utility.o(i.verify_ip_address), (120 bytes).
     Removing utility.o(.bss), (48 bytes).
-    Removing utility.o(.data), (4 bytes).
     Removing attcp.o(.rev16_text), (4 bytes).
     Removing attcp.o(.revsh_text), (4 bytes).
     Removing auto_update.o(.rev16_text), (4 bytes).
@@ -1914,7 +1910,7 @@ Removing Unused input sections from the image.
     Removing secs.o(.rev16_text), (4 bytes).
     Removing secs.o(.revsh_text), (4 bytes).
     Removing secs.o(i.getSerialNo), (40 bytes).
-    Removing secs.o(i.report_S18F10), (628 bytes).
+    Removing secs.o(i.report_S18F10), (620 bytes).
     Removing secs.o(i.report_S18F71_LF_4), (408 bytes).
     Removing secs.o(i.report_S18F75), (348 bytes).
     Removing secs.o(i.report_S18F81), (604 bytes).
@@ -1975,7 +1971,7 @@ Removing Unused input sections from the image.
     Removing sht2x.o(.revsh_text), (4 bytes).
     Removing sht2x.o(.constdata), (2 bytes).
 
-688 unused section(s) (total 36745 bytes) removed from the image.
+686 unused section(s) (total 36669 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1988,60 +1984,60 @@ Image Symbol Table
     ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ../clib/microlib/string/strcpy.c         0x00000000   Number         0  strcpy.o ABSOLUTE
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
     ../clib/microlib/string/strncmp.c        0x00000000   Number         0  strncmp.o ABSOLUTE
     ../clib/microlib/string/strncpy.c        0x00000000   Number         0  strncpy.o ABSOLUTE
     ../clib/microlib/string/strstr.c         0x00000000   Number         0  strstr.o ABSOLUTE
-    ../clib/microlib/string/strtok.c         0x00000000   Number         0  strtok.o ABSOLUTE
     ../clib/microlib/string/strtok.c         0x00000000   Number         0  strtok_r.o ABSOLUTE
+    ../clib/microlib/string/strtok.c         0x00000000   Number         0  strtok.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
     ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
-    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixi.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
-    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
     ..\..\Beep\Beep.c                        0x00000000   Number         0  beep.o ABSOLUTE
     ..\..\Board\Board.c                      0x00000000   Number         0  board.o ABSOLUTE
     ..\..\Firmware\CMSIS\GD\GD32F10x\Source\ARM\startup_gd32f10x_hd.s 0x00000000   Number         0  startup_gd32f10x_hd.o ABSOLUTE
@@ -2182,8 +2178,8 @@ Image Symbol Table
     .text                                    0x08010690   Section        0  uldiv.o(.text)
     .text                                    0x080106f2   Section        0  llshl.o(.text)
     .text                                    0x08010710   Section        0  llsshr.o(.text)
-    .text                                    0x08010734   Section        0  fepilogue.o(.text)
     .text                                    0x08010734   Section        0  iusefp.o(.text)
+    .text                                    0x08010734   Section        0  fepilogue.o(.text)
     .text                                    0x080107a2   Section        0  depilogue.o(.text)
     .text                                    0x0801085c   Section        0  dfixul.o(.text)
     .text                                    0x0801088c   Section       48  cdrcmple.o(.text)
@@ -2249,202 +2245,202 @@ Image Symbol Table
     i.Write_Max7219                          0x080115f4   Section        0  max7219.o(i.Write_Max7219)
     i.Write_Max7219_byte                     0x0801161c   Section        0  max7219.o(i.Write_Max7219_byte)
     i._Debug2                                0x0801165c   Section        0  main.o(i._Debug2)
-    i._Get_UUID                              0x08011714   Section        0  w5500_conf.o(i._Get_UUID)
-    i.__0printf                              0x08011828   Section        0  printfa.o(i.__0printf)
-    i.__0sprintf                             0x08011848   Section        0  printfa.o(i.__0sprintf)
-    i.__0vsprintf                            0x08011870   Section        0  printfa.o(i.__0vsprintf)
-    i.__scatterload_copy                     0x08011894   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080118a2   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080118a4   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._fp_digits                             0x080118b4   Section        0  printfa.o(i._fp_digits)
-    _fp_digits                               0x080118b5   Thumb Code   366  printfa.o(i._fp_digits)
-    i._printf_core                           0x08011a38   Section        0  printfa.o(i._printf_core)
-    _printf_core                             0x08011a39   Thumb Code  1704  printfa.o(i._printf_core)
-    i._printf_post_padding                   0x080120ec   Section        0  printfa.o(i._printf_post_padding)
-    _printf_post_padding                     0x080120ed   Thumb Code    36  printfa.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x08012110   Section        0  printfa.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x08012111   Thumb Code    46  printfa.o(i._printf_pre_padding)
-    i._sputc                                 0x0801213e   Section        0  printfa.o(i._sputc)
-    _sputc                                   0x0801213f   Thumb Code    10  printfa.o(i._sputc)
-    i.amkor_nc01_crc                         0x08012148   Section        0  main.o(i.amkor_nc01_crc)
-    i.before_amkor_nc01_filter               0x08012170   Section        0  main.o(i.before_amkor_nc01_filter)
-    i.before_amkor_nc01_rs232_filter         0x080122a4   Section        0  main.o(i.before_amkor_nc01_rs232_filter)
-    i.before_secs_filter                     0x080123e4   Section        0  main.o(i.before_secs_filter)
-    i.checkSecsLinkOk                        0x08012a6c   Section        0  main.o(i.checkSecsLinkOk)
-    i.close                                  0x08012a9c   Section        0  socket.o(i.close)
-    i.close_atsocket                         0x08012ad0   Section        0  attcp.o(i.close_atsocket)
-    i.confit_rs485                           0x08012af0   Section        0  rs485.o(i.confit_rs485)
-    i.delay_1ms                              0x08012b4c   Section        0  systick.o(i.delay_1ms)
-    i.delay_decrement                        0x08012b60   Section        0  systick.o(i.delay_decrement)
-    i.delay_ms                               0x08012b78   Section        0  utility.o(i.delay_ms)
-    i.delay_us                               0x08012b84   Section        0  utility.o(i.delay_us)
-    i.disconnect                             0x08012bb4   Section        0  socket.o(i.disconnect)
-    i.do_attcp_cmd                           0x08012bdc   Section        0  attcp.o(i.do_attcp_cmd)
-    i.do_fw_update                           0x08012d20   Section        0  fw_update.o(i.do_fw_update)
-    i.do_secstcp_cmd                         0x08012f00   Section        0  secstcp.o(i.do_secstcp_cmd)
-    i.do_udp_config                          0x0801304c   Section        0  udp_config.o(i.do_udp_config)
-    i.eth_rx_enque                           0x08013528   Section        0  queue.o(i.eth_rx_enque)
-    i.exti_init                              0x08013580   Section        0  gd32f10x_exti.o(i.exti_init)
-    i.exti_interrupt_enable                  0x0801363c   Section        0  gd32f10x_exti.o(i.exti_interrupt_enable)
-    i.exti_interrupt_flag_clear              0x0801364c   Section        0  gd32f10x_exti.o(i.exti_interrupt_flag_clear)
-    i.exti_interrupt_flag_get                0x08013658   Section        0  gd32f10x_exti.o(i.exti_interrupt_flag_get)
-    i.fmc_bank0_ready_wait                   0x08013670   Section        0  gd32f10x_fmc.o(i.fmc_bank0_ready_wait)
-    i.fmc_bank0_state_get                    0x08013694   Section        0  gd32f10x_fmc.o(i.fmc_bank0_state_get)
-    i.fmc_bank1_ready_wait                   0x080136c4   Section        0  gd32f10x_fmc.o(i.fmc_bank1_ready_wait)
-    i.fmc_bank1_state_get                    0x080136e8   Section        0  gd32f10x_fmc.o(i.fmc_bank1_state_get)
-    i.fmc_flag_clear                         0x08013718   Section        0  gd32f10x_fmc.o(i.fmc_flag_clear)
-    i.fmc_lock                               0x08013738   Section        0  gd32f10x_fmc.o(i.fmc_lock)
-    i.fmc_page_erase                         0x08013764   Section        0  gd32f10x_fmc.o(i.fmc_page_erase)
-    i.fmc_unlock                             0x0801385c   Section        0  gd32f10x_fmc.o(i.fmc_unlock)
-    i.fmc_word_program                       0x080138a0   Section        0  gd32f10x_fmc.o(i.fmc_word_program)
-    i.fputc                                  0x08013960   Section        0  main.o(i.fputc)
-    i.gd_eval_com_init                       0x08013984   Section        0  board.o(i.gd_eval_com_init)
-    i.generate_crc16                         0x08013a70   Section        0  crc16_xmodem.o(i.generate_crc16)
-    i.getGAR                                 0x08013aa4   Section        0  w5500.o(i.getGAR)
-    i.getIINCHIP_TxMAX                       0x08013ab4   Section        0  w5500.o(i.getIINCHIP_TxMAX)
-    i.getSIPR                                0x08013ac4   Section        0  w5500.o(i.getSIPR)
-    i.getSUBR                                0x08013ad6   Section        0  w5500.o(i.getSUBR)
-    i.getSn_IR                               0x08013ae8   Section        0  w5500.o(i.getSn_IR)
-    i.getSn_RX_RSR                           0x08013afa   Section        0  w5500.o(i.getSn_RX_RSR)
-    i.getSn_SR                               0x08013b4e   Section        0  w5500.o(i.getSn_SR)
-    i.getSn_TX_FSR                           0x08013b60   Section        0  w5500.o(i.getSn_TX_FSR)
-    i.get_config                             0x08013bb4   Section        0  w5500_conf.o(i.get_config)
-    i.gio_event_deque                        0x08013c08   Section        0  gp_io.o(i.gio_event_deque)
-    i.gp_get_in                              0x08013c34   Section        0  gp_io.o(i.gp_get_in)
-    i.gp_io_init                             0x08013ce0   Section        0  gp_io.o(i.gp_io_init)
-    i.gp_set_out                             0x08013f50   Section        0  gp_io.o(i.gp_set_out)
-    i.gpio_bit_reset                         0x08014064   Section        0  gd32f10x_gpio.o(i.gpio_bit_reset)
-    i.gpio_bit_set                           0x08014068   Section        0  gd32f10x_gpio.o(i.gpio_bit_set)
-    i.gpio_bit_write                         0x0801406c   Section        0  gd32f10x_gpio.o(i.gpio_bit_write)
-    i.gpio_exti_source_select                0x08014078   Section        0  gd32f10x_gpio.o(i.gpio_exti_source_select)
-    i.gpio_for_w5500_config                  0x08014110   Section        0  w5500_conf.o(i.gpio_for_w5500_config)
-    i.gpio_init                              0x08014154   Section        0  gd32f10x_gpio.o(i.gpio_init)
-    i.gpio_input_bit_get                     0x08014200   Section        0  gd32f10x_gpio.o(i.gpio_input_bit_get)
-    i.gpio_pin_remap_config                  0x08014210   Section        0  gd32f10x_gpio.o(i.gpio_pin_remap_config)
-    i.iinchip_csoff                          0x080142a0   Section        0  w5500_conf.o(i.iinchip_csoff)
-    i.iinchip_cson                           0x080142aa   Section        0  w5500_conf.o(i.iinchip_cson)
-    i.init_rs485                             0x080142b4   Section        0  rs485.o(i.init_rs485)
-    i.keypad_init                            0x080142f8   Section        0  keypad.o(i.keypad_init)
-    i.led_init                               0x08014320   Section        0  led.o(i.led_init)
-    i.led_off                                0x08014344   Section        0  led.o(i.led_off)
-    i.led_on                                 0x0801436c   Section        0  led.o(i.led_on)
-    i.led_spark                              0x08014394   Section        0  main.o(i.led_spark)
-    i.led_toggle                             0x0801447c   Section        0  led.o(i.led_toggle)
-    i.listen                                 0x080144b4   Section        0  socket.o(i.listen)
-    i.load_nc01_parameters                   0x080144f4   Section        0  keypad.o(i.load_nc01_parameters)
-    i.magnetic_gate_beep_on                  0x08014680   Section        0  main.o(i.magnetic_gate_beep_on)
-    i.main                                   0x080146ac   Section        0  main.o(i.main)
-    i.myputc                                 0x08014bc4   Section        0  main.o(i.myputc)
-    i.myputstr                               0x08014be8   Section        0  main.o(i.myputstr)
-    i.nvic_configuration                     0x08014c04   Section        0  board.o(i.nvic_configuration)
-    i.nvic_irq_enable                        0x08014c14   Section        0  gd32f10x_misc.o(i.nvic_irq_enable)
-    i.nvic_priority_group_set                0x08014cc0   Section        0  gd32f10x_misc.o(i.nvic_priority_group_set)
-    i.nvic_vector_table_set                  0x08014cd4   Section        0  gd32f10x_misc.o(i.nvic_vector_table_set)
-    i.process_com1_com2_test                 0x08014cec   Section        0  main.o(i.process_com1_com2_test)
-    i.process_gpi_filter                     0x08014ddc   Section        0  main.o(i.process_gpi_filter)
-    i.process_rcv_amkor_nc01_cmd             0x08014ea0   Section        0  main.o(i.process_rcv_amkor_nc01_cmd)
-    i.process_rcv_amkor_nc01_rs232_cmd       0x08014f08   Section        0  main.o(i.process_rcv_amkor_nc01_rs232_cmd)
-    i.process_rcv_secs_cmd                   0x08014f98   Section        0  main.o(i.process_rcv_secs_cmd)
-    i.put_test_data_queue                    0x08014fde   Section        0  main.o(i.put_test_data_queue)
-    i.rcu_all_reset_flag_clear               0x0801500c   Section        0  gd32f10x_rcu.o(i.rcu_all_reset_flag_clear)
-    i.rcu_clock_freq_get                     0x08015020   Section        0  gd32f10x_rcu.o(i.rcu_clock_freq_get)
-    i.rcu_flag_get                           0x08015144   Section        0  gd32f10x_rcu.o(i.rcu_flag_get)
-    i.rcu_periph_clock_enable                0x08015168   Section        0  gd32f10x_rcu.o(i.rcu_periph_clock_enable)
-    i.rcu_periph_reset_disable               0x08015188   Section        0  gd32f10x_rcu.o(i.rcu_periph_reset_disable)
-    i.rcu_periph_reset_enable                0x080151a8   Section        0  gd32f10x_rcu.o(i.rcu_periph_reset_enable)
-    i.reboot                                 0x080151c8   Section        0  w5500_conf.o(i.reboot)
-    i.recv                                   0x080151dc   Section        0  socket.o(i.recv)
-    i.recv_data_processing                   0x08015220   Section        0  w5500.o(i.recv_data_processing)
-    i.recvfrom                               0x080152b4   Section        0  socket.o(i.recvfrom)
-    i.report_S2F18                           0x080154b4   Section        0  secs.o(i.report_S2F18)
-    i.report_S2F22                           0x080155b8   Section        0  secs.o(i.report_S2F22)
-    i.reset_gpi_filter                       0x08015694   Section        0  main.o(i.reset_gpi_filter)
-    i.reset_w5500                            0x080156d0   Section        0  w5500_conf.o(i.reset_w5500)
-    i.rtc_configuration_mode_enter           0x080156fc   Section        0  gd32f10x_rtc.o(i.rtc_configuration_mode_enter)
-    i.rtc_configuration_mode_exit            0x08015710   Section        0  gd32f10x_rtc.o(i.rtc_configuration_mode_exit)
-    i.rtc_counter_get                        0x08015724   Section        0  gd32f10x_rtc.o(i.rtc_counter_get)
-    i.rtc_counter_set                        0x08015738   Section        0  gd32f10x_rtc.o(i.rtc_counter_set)
-    i.rtc_flag_clear                         0x08015758   Section        0  gd32f10x_rtc.o(i.rtc_flag_clear)
-    i.rtc_flag_get                           0x08015768   Section        0  gd32f10x_rtc.o(i.rtc_flag_get)
-    i.rtc_lwoff_wait                         0x08015780   Section        0  gd32f10x_rtc.o(i.rtc_lwoff_wait)
-    i.secs_post_received_data                0x08015794   Section        0  sio.o(i.secs_post_received_data)
-    i.send                                   0x080157cc   Section        0  socket.o(i.send)
-    i.send_data_processing                   0x080158b8   Section        0  w5500.o(i.send_data_processing)
-    i.send_secs_socket                       0x0801594c   Section        0  secstcp.o(i.send_secs_socket)
-    i.send_tcp_socket                        0x08015988   Section        0  attcp.o(i.send_tcp_socket)
-    i.sendto                                 0x080159c4   Section        0  socket.o(i.sendto)
-    i.setGAR                                 0x08015ad0   Section        0  w5500.o(i.setGAR)
-    i.setRCR                                 0x08015ae0   Section        0  w5500.o(i.setRCR)
-    i.setRTR                                 0x08015af0   Section        0  w5500.o(i.setRTR)
-    i.setSHAR                                0x08015b0a   Section        0  w5500.o(i.setSHAR)
-    i.setSIPR                                0x08015b1c   Section        0  w5500.o(i.setSIPR)
-    i.setSUBR                                0x08015b2e   Section        0  w5500.o(i.setSUBR)
-    i.setSn_IR                               0x08015b40   Section        0  w5500.o(i.setSn_IR)
-    i.set_default                            0x08015b58   Section        0  w5500_conf.o(i.set_default)
-    i.set_network                            0x08015c00   Section        0  w5500_conf.o(i.set_network)
-    i.sio_byte_buf_enqueue                   0x08015d10   Section        0  sio.o(i.sio_byte_buf_enqueue)
-    i.sio_byte_buf_flush                     0x08015d20   Section        0  sio.o(i.sio_byte_buf_flush)
-    i.sio_post_received_data                 0x08015d30   Section        0  sio.o(i.sio_post_received_data)
-    i.socket                                 0x08015d68   Section        0  socket.o(i.socket)
-    i.socket_buf_init                        0x08015e2c   Section        0  w5500.o(i.socket_buf_init)
-    i.spi_crc_polynomial_set                 0x08015eb4   Section        0  gd32f10x_spi.o(i.spi_crc_polynomial_set)
-    i.spi_enable                             0x08015ec0   Section        0  gd32f10x_spi.o(i.spi_enable)
-    i.spi_i2s_data_receive                   0x08015eca   Section        0  gd32f10x_spi.o(i.spi_i2s_data_receive)
-    i.spi_i2s_data_transmit                  0x08015ed2   Section        0  gd32f10x_spi.o(i.spi_i2s_data_transmit)
-    i.spi_i2s_flag_get                       0x08015ed6   Section        0  gd32f10x_spi.o(i.spi_i2s_flag_get)
-    i.spi_init                               0x08015ee6   Section        0  gd32f10x_spi.o(i.spi_init)
-    i.start_TIM4                             0x08015f18   Section        0  main.o(i.start_TIM4)
-    i.stop_TIM4                              0x08015f28   Section        0  main.o(i.stop_TIM4)
-    i.switchLEDmode                          0x08015f38   Section        0  main.o(i.switchLEDmode)
-    i.system_clock_108m_hxtal                0x08016084   Section        0  system_gd32f10x.o(i.system_clock_108m_hxtal)
-    system_clock_108m_hxtal                  0x08016085   Thumb Code   182  system_gd32f10x.o(i.system_clock_108m_hxtal)
-    i.system_clock_config                    0x08016148   Section        0  system_gd32f10x.o(i.system_clock_config)
-    system_clock_config                      0x08016149   Thumb Code     8  system_gd32f10x.o(i.system_clock_config)
-    i.systick_config                         0x08016150   Section        0  systick.o(i.systick_config)
-    i.timer4_isr                             0x080161a0   Section        0  main.o(i.timer4_isr)
-    i.timer_deinit                           0x08016294   Section        0  gd32f10x_timer.o(i.timer_deinit)
-    i.timer_disable                          0x08016370   Section        0  gd32f10x_timer.o(i.timer_disable)
-    i.timer_enable                           0x0801637a   Section        0  gd32f10x_timer.o(i.timer_enable)
-    i.timer_init                             0x08016384   Section        0  gd32f10x_timer.o(i.timer_init)
-    i.timer_interrupt_enable                 0x08016464   Section        0  gd32f10x_timer.o(i.timer_interrupt_enable)
-    i.timer_interrupt_flag_clear             0x0801646c   Section        0  gd32f10x_timer.o(i.timer_interrupt_flag_clear)
-    i.timer_interrupt_flag_get               0x08016472   Section        0  gd32f10x_timer.o(i.timer_interrupt_flag_get)
-    i.usart_baudrate_set                     0x0801648c   Section        0  gd32f10x_usart.o(i.usart_baudrate_set)
-    i.usart_data_receive                     0x0801651c   Section        0  gd32f10x_usart.o(i.usart_data_receive)
-    i.usart_data_transmit                    0x08016526   Section        0  gd32f10x_usart.o(i.usart_data_transmit)
-    i.usart_deinit                           0x08016530   Section        0  gd32f10x_usart.o(i.usart_deinit)
-    i.usart_enable                           0x080165c0   Section        0  gd32f10x_usart.o(i.usart_enable)
-    i.usart_flag_get                         0x080165ca   Section        0  gd32f10x_usart.o(i.usart_flag_get)
-    i.usart_hardware_flow_cts_config         0x080165e8   Section        0  gd32f10x_usart.o(i.usart_hardware_flow_cts_config)
-    i.usart_hardware_flow_rts_config         0x080165fc   Section        0  gd32f10x_usart.o(i.usart_hardware_flow_rts_config)
-    i.usart_interrupt_enable                 0x08016610   Section        0  gd32f10x_usart.o(i.usart_interrupt_enable)
-    i.usart_interrupt_flag_clear             0x0801662a   Section        0  gd32f10x_usart.o(i.usart_interrupt_flag_clear)
-    i.usart_interrupt_flag_get               0x0801663c   Section        0  gd32f10x_usart.o(i.usart_interrupt_flag_get)
-    i.usart_parity_config                    0x08016674   Section        0  gd32f10x_usart.o(i.usart_parity_config)
-    i.usart_receive_config                   0x08016684   Section        0  gd32f10x_usart.o(i.usart_receive_config)
-    i.usart_stop_bit_set                     0x08016694   Section        0  gd32f10x_usart.o(i.usart_stop_bit_set)
-    i.usart_transmit_config                  0x080166a4   Section        0  gd32f10x_usart.o(i.usart_transmit_config)
-    i.usart_word_length_set                  0x080166b4   Section        0  gd32f10x_usart.o(i.usart_word_length_set)
-    i.usercmd_deque                          0x080166c4   Section        0  queue.o(i.usercmd_deque)
-    i.usercmd_enque                          0x080166f4   Section        0  queue.o(i.usercmd_enque)
-    i.wdt_hw_disable                         0x0801675c   Section        0  wdt_hw.o(i.wdt_hw_disable)
-    i.wdt_hw_enable                          0x08016770   Section        0  wdt_hw.o(i.wdt_hw_enable)
-    i.wdt_hw_int                             0x08016784   Section        0  wdt_hw.o(i.wdt_hw_int)
-    i.wdt_hw_set_wdi                         0x080167c4   Section        0  wdt_hw.o(i.wdt_hw_set_wdi)
-    i.wiz_cs                                 0x080167e8   Section        0  w5500_conf.o(i.wiz_cs)
-    i.wiz_read_buf                           0x0801680c   Section        0  w5500_conf.o(i.wiz_read_buf)
-    i.wiz_write_buf                          0x08016874   Section        0  w5500_conf.o(i.wiz_write_buf)
-    i.write_config_to_flash                  0x080168dc   Section        0  w5500_conf.o(i.write_config_to_flash)
-    i.write_ver_to_flash                     0x08016968   Section        0  w5500_conf.o(i.write_ver_to_flash)
-    .constdata                               0x080169ec   Section       81  main.o(.constdata)
-    __FUNCTION__                             0x08016a1c   Data          33  main.o(.constdata)
-    .constdata                               0x08016a3d   Section       70  secs.o(.constdata)
-    .constdata                               0x08016a83   Section       47  gp_io.o(.constdata)
-    __func__                                 0x08016a83   Data          11  gp_io.o(.constdata)
-    __func__                                 0x08016a8e   Data          11  gp_io.o(.constdata)
-    __func__                                 0x08016a99   Data          10  gp_io.o(.constdata)
-    __func__                                 0x08016aa3   Data          15  gp_io.o(.constdata)
-    .conststring                             0x08016ab4   Section       72  main.o(.conststring)
+    i._Get_UUID                              0x080116f0   Section        0  w5500_conf.o(i._Get_UUID)
+    i.__0printf                              0x08011804   Section        0  printfa.o(i.__0printf)
+    i.__0sprintf                             0x08011824   Section        0  printfa.o(i.__0sprintf)
+    i.__0vsprintf                            0x0801184c   Section        0  printfa.o(i.__0vsprintf)
+    i.__scatterload_copy                     0x08011870   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0801187e   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08011880   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._fp_digits                             0x08011890   Section        0  printfa.o(i._fp_digits)
+    _fp_digits                               0x08011891   Thumb Code   366  printfa.o(i._fp_digits)
+    i._printf_core                           0x08011a14   Section        0  printfa.o(i._printf_core)
+    _printf_core                             0x08011a15   Thumb Code  1704  printfa.o(i._printf_core)
+    i._printf_post_padding                   0x080120c8   Section        0  printfa.o(i._printf_post_padding)
+    _printf_post_padding                     0x080120c9   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x080120ec   Section        0  printfa.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x080120ed   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._sputc                                 0x0801211a   Section        0  printfa.o(i._sputc)
+    _sputc                                   0x0801211b   Thumb Code    10  printfa.o(i._sputc)
+    i.amkor_nc01_crc                         0x08012124   Section        0  main.o(i.amkor_nc01_crc)
+    i.before_amkor_nc01_filter               0x0801214c   Section        0  main.o(i.before_amkor_nc01_filter)
+    i.before_amkor_nc01_rs232_filter         0x08012280   Section        0  main.o(i.before_amkor_nc01_rs232_filter)
+    i.before_secs_filter                     0x080123c0   Section        0  main.o(i.before_secs_filter)
+    i.checkSecsLinkOk                        0x08012a48   Section        0  main.o(i.checkSecsLinkOk)
+    i.close                                  0x08012a78   Section        0  socket.o(i.close)
+    i.close_atsocket                         0x08012aac   Section        0  attcp.o(i.close_atsocket)
+    i.confit_rs485                           0x08012acc   Section        0  rs485.o(i.confit_rs485)
+    i.delay_1ms                              0x08012b28   Section        0  systick.o(i.delay_1ms)
+    i.delay_decrement                        0x08012b3c   Section        0  systick.o(i.delay_decrement)
+    i.delay_ms                               0x08012b54   Section        0  utility.o(i.delay_ms)
+    i.delay_us                               0x08012b60   Section        0  utility.o(i.delay_us)
+    i.disconnect                             0x08012b90   Section        0  socket.o(i.disconnect)
+    i.do_attcp_cmd                           0x08012bb8   Section        0  attcp.o(i.do_attcp_cmd)
+    i.do_fw_update                           0x08012cfc   Section        0  fw_update.o(i.do_fw_update)
+    i.do_secstcp_cmd                         0x08012ed4   Section        0  secstcp.o(i.do_secstcp_cmd)
+    i.do_udp_config                          0x08013020   Section        0  udp_config.o(i.do_udp_config)
+    i.eth_rx_enque                           0x080134fc   Section        0  queue.o(i.eth_rx_enque)
+    i.exti_init                              0x08013554   Section        0  gd32f10x_exti.o(i.exti_init)
+    i.exti_interrupt_enable                  0x08013610   Section        0  gd32f10x_exti.o(i.exti_interrupt_enable)
+    i.exti_interrupt_flag_clear              0x08013620   Section        0  gd32f10x_exti.o(i.exti_interrupt_flag_clear)
+    i.exti_interrupt_flag_get                0x0801362c   Section        0  gd32f10x_exti.o(i.exti_interrupt_flag_get)
+    i.fmc_bank0_ready_wait                   0x08013644   Section        0  gd32f10x_fmc.o(i.fmc_bank0_ready_wait)
+    i.fmc_bank0_state_get                    0x08013668   Section        0  gd32f10x_fmc.o(i.fmc_bank0_state_get)
+    i.fmc_bank1_ready_wait                   0x08013698   Section        0  gd32f10x_fmc.o(i.fmc_bank1_ready_wait)
+    i.fmc_bank1_state_get                    0x080136bc   Section        0  gd32f10x_fmc.o(i.fmc_bank1_state_get)
+    i.fmc_flag_clear                         0x080136ec   Section        0  gd32f10x_fmc.o(i.fmc_flag_clear)
+    i.fmc_lock                               0x0801370c   Section        0  gd32f10x_fmc.o(i.fmc_lock)
+    i.fmc_page_erase                         0x08013738   Section        0  gd32f10x_fmc.o(i.fmc_page_erase)
+    i.fmc_unlock                             0x08013830   Section        0  gd32f10x_fmc.o(i.fmc_unlock)
+    i.fmc_word_program                       0x08013874   Section        0  gd32f10x_fmc.o(i.fmc_word_program)
+    i.fputc                                  0x08013934   Section        0  main.o(i.fputc)
+    i.gd_eval_com_init                       0x08013958   Section        0  board.o(i.gd_eval_com_init)
+    i.generate_crc16                         0x08013a44   Section        0  crc16_xmodem.o(i.generate_crc16)
+    i.getGAR                                 0x08013a78   Section        0  w5500.o(i.getGAR)
+    i.getIINCHIP_TxMAX                       0x08013a88   Section        0  w5500.o(i.getIINCHIP_TxMAX)
+    i.getSIPR                                0x08013a98   Section        0  w5500.o(i.getSIPR)
+    i.getSUBR                                0x08013aaa   Section        0  w5500.o(i.getSUBR)
+    i.getSn_IR                               0x08013abc   Section        0  w5500.o(i.getSn_IR)
+    i.getSn_RX_RSR                           0x08013ace   Section        0  w5500.o(i.getSn_RX_RSR)
+    i.getSn_SR                               0x08013b22   Section        0  w5500.o(i.getSn_SR)
+    i.getSn_TX_FSR                           0x08013b34   Section        0  w5500.o(i.getSn_TX_FSR)
+    i.get_config                             0x08013b88   Section        0  w5500_conf.o(i.get_config)
+    i.gio_event_deque                        0x08013bdc   Section        0  gp_io.o(i.gio_event_deque)
+    i.gp_get_in                              0x08013c08   Section        0  gp_io.o(i.gp_get_in)
+    i.gp_io_init                             0x08013cb4   Section        0  gp_io.o(i.gp_io_init)
+    i.gp_set_out                             0x08013f24   Section        0  gp_io.o(i.gp_set_out)
+    i.gpio_bit_reset                         0x08014038   Section        0  gd32f10x_gpio.o(i.gpio_bit_reset)
+    i.gpio_bit_set                           0x0801403c   Section        0  gd32f10x_gpio.o(i.gpio_bit_set)
+    i.gpio_bit_write                         0x08014040   Section        0  gd32f10x_gpio.o(i.gpio_bit_write)
+    i.gpio_exti_source_select                0x0801404c   Section        0  gd32f10x_gpio.o(i.gpio_exti_source_select)
+    i.gpio_for_w5500_config                  0x080140e4   Section        0  w5500_conf.o(i.gpio_for_w5500_config)
+    i.gpio_init                              0x08014128   Section        0  gd32f10x_gpio.o(i.gpio_init)
+    i.gpio_input_bit_get                     0x080141d4   Section        0  gd32f10x_gpio.o(i.gpio_input_bit_get)
+    i.gpio_pin_remap_config                  0x080141e4   Section        0  gd32f10x_gpio.o(i.gpio_pin_remap_config)
+    i.iinchip_csoff                          0x08014274   Section        0  w5500_conf.o(i.iinchip_csoff)
+    i.iinchip_cson                           0x0801427e   Section        0  w5500_conf.o(i.iinchip_cson)
+    i.init_rs485                             0x08014288   Section        0  rs485.o(i.init_rs485)
+    i.keypad_init                            0x080142cc   Section        0  keypad.o(i.keypad_init)
+    i.led_init                               0x080142f4   Section        0  led.o(i.led_init)
+    i.led_off                                0x08014318   Section        0  led.o(i.led_off)
+    i.led_on                                 0x08014340   Section        0  led.o(i.led_on)
+    i.led_spark                              0x08014368   Section        0  main.o(i.led_spark)
+    i.led_toggle                             0x08014450   Section        0  led.o(i.led_toggle)
+    i.listen                                 0x08014488   Section        0  socket.o(i.listen)
+    i.load_nc01_parameters                   0x080144c8   Section        0  keypad.o(i.load_nc01_parameters)
+    i.magnetic_gate_beep_on                  0x08014654   Section        0  main.o(i.magnetic_gate_beep_on)
+    i.main                                   0x08014680   Section        0  main.o(i.main)
+    i.myputc                                 0x08014b98   Section        0  main.o(i.myputc)
+    i.myputstr                               0x08014bbc   Section        0  main.o(i.myputstr)
+    i.nvic_configuration                     0x08014bd8   Section        0  board.o(i.nvic_configuration)
+    i.nvic_irq_enable                        0x08014be8   Section        0  gd32f10x_misc.o(i.nvic_irq_enable)
+    i.nvic_priority_group_set                0x08014c94   Section        0  gd32f10x_misc.o(i.nvic_priority_group_set)
+    i.nvic_vector_table_set                  0x08014ca8   Section        0  gd32f10x_misc.o(i.nvic_vector_table_set)
+    i.process_com1_com2_test                 0x08014cc0   Section        0  main.o(i.process_com1_com2_test)
+    i.process_gpi_filter                     0x08014db0   Section        0  main.o(i.process_gpi_filter)
+    i.process_rcv_amkor_nc01_cmd             0x08014e74   Section        0  main.o(i.process_rcv_amkor_nc01_cmd)
+    i.process_rcv_amkor_nc01_rs232_cmd       0x08014edc   Section        0  main.o(i.process_rcv_amkor_nc01_rs232_cmd)
+    i.process_rcv_secs_cmd                   0x08014f6c   Section        0  main.o(i.process_rcv_secs_cmd)
+    i.put_test_data_queue                    0x08014fb2   Section        0  main.o(i.put_test_data_queue)
+    i.rcu_all_reset_flag_clear               0x08014fe0   Section        0  gd32f10x_rcu.o(i.rcu_all_reset_flag_clear)
+    i.rcu_clock_freq_get                     0x08014ff4   Section        0  gd32f10x_rcu.o(i.rcu_clock_freq_get)
+    i.rcu_flag_get                           0x08015118   Section        0  gd32f10x_rcu.o(i.rcu_flag_get)
+    i.rcu_periph_clock_enable                0x0801513c   Section        0  gd32f10x_rcu.o(i.rcu_periph_clock_enable)
+    i.rcu_periph_reset_disable               0x0801515c   Section        0  gd32f10x_rcu.o(i.rcu_periph_reset_disable)
+    i.rcu_periph_reset_enable                0x0801517c   Section        0  gd32f10x_rcu.o(i.rcu_periph_reset_enable)
+    i.reboot                                 0x0801519c   Section        0  w5500_conf.o(i.reboot)
+    i.recv                                   0x080151b0   Section        0  socket.o(i.recv)
+    i.recv_data_processing                   0x080151f4   Section        0  w5500.o(i.recv_data_processing)
+    i.recvfrom                               0x08015288   Section        0  socket.o(i.recvfrom)
+    i.report_S2F18                           0x08015488   Section        0  secs.o(i.report_S2F18)
+    i.report_S2F22                           0x0801558c   Section        0  secs.o(i.report_S2F22)
+    i.reset_gpi_filter                       0x08015668   Section        0  main.o(i.reset_gpi_filter)
+    i.reset_w5500                            0x080156a4   Section        0  w5500_conf.o(i.reset_w5500)
+    i.rtc_configuration_mode_enter           0x080156d0   Section        0  gd32f10x_rtc.o(i.rtc_configuration_mode_enter)
+    i.rtc_configuration_mode_exit            0x080156e4   Section        0  gd32f10x_rtc.o(i.rtc_configuration_mode_exit)
+    i.rtc_counter_get                        0x080156f8   Section        0  gd32f10x_rtc.o(i.rtc_counter_get)
+    i.rtc_counter_set                        0x0801570c   Section        0  gd32f10x_rtc.o(i.rtc_counter_set)
+    i.rtc_flag_clear                         0x0801572c   Section        0  gd32f10x_rtc.o(i.rtc_flag_clear)
+    i.rtc_flag_get                           0x0801573c   Section        0  gd32f10x_rtc.o(i.rtc_flag_get)
+    i.rtc_lwoff_wait                         0x08015754   Section        0  gd32f10x_rtc.o(i.rtc_lwoff_wait)
+    i.secs_post_received_data                0x08015768   Section        0  sio.o(i.secs_post_received_data)
+    i.send                                   0x080157a0   Section        0  socket.o(i.send)
+    i.send_data_processing                   0x0801588c   Section        0  w5500.o(i.send_data_processing)
+    i.send_secs_socket                       0x08015920   Section        0  secstcp.o(i.send_secs_socket)
+    i.send_tcp_socket                        0x0801595c   Section        0  attcp.o(i.send_tcp_socket)
+    i.sendto                                 0x08015998   Section        0  socket.o(i.sendto)
+    i.setGAR                                 0x08015aa4   Section        0  w5500.o(i.setGAR)
+    i.setRCR                                 0x08015ab4   Section        0  w5500.o(i.setRCR)
+    i.setRTR                                 0x08015ac4   Section        0  w5500.o(i.setRTR)
+    i.setSHAR                                0x08015ade   Section        0  w5500.o(i.setSHAR)
+    i.setSIPR                                0x08015af0   Section        0  w5500.o(i.setSIPR)
+    i.setSUBR                                0x08015b02   Section        0  w5500.o(i.setSUBR)
+    i.setSn_IR                               0x08015b14   Section        0  w5500.o(i.setSn_IR)
+    i.set_default                            0x08015b2c   Section        0  w5500_conf.o(i.set_default)
+    i.set_network                            0x08015bd4   Section        0  w5500_conf.o(i.set_network)
+    i.sio_byte_buf_enqueue                   0x08015ce4   Section        0  sio.o(i.sio_byte_buf_enqueue)
+    i.sio_byte_buf_flush                     0x08015cf4   Section        0  sio.o(i.sio_byte_buf_flush)
+    i.sio_post_received_data                 0x08015d04   Section        0  sio.o(i.sio_post_received_data)
+    i.socket                                 0x08015d3c   Section        0  socket.o(i.socket)
+    i.socket_buf_init                        0x08015e00   Section        0  w5500.o(i.socket_buf_init)
+    i.spi_crc_polynomial_set                 0x08015e88   Section        0  gd32f10x_spi.o(i.spi_crc_polynomial_set)
+    i.spi_enable                             0x08015e94   Section        0  gd32f10x_spi.o(i.spi_enable)
+    i.spi_i2s_data_receive                   0x08015e9e   Section        0  gd32f10x_spi.o(i.spi_i2s_data_receive)
+    i.spi_i2s_data_transmit                  0x08015ea6   Section        0  gd32f10x_spi.o(i.spi_i2s_data_transmit)
+    i.spi_i2s_flag_get                       0x08015eaa   Section        0  gd32f10x_spi.o(i.spi_i2s_flag_get)
+    i.spi_init                               0x08015eba   Section        0  gd32f10x_spi.o(i.spi_init)
+    i.start_TIM4                             0x08015eec   Section        0  main.o(i.start_TIM4)
+    i.stop_TIM4                              0x08015efc   Section        0  main.o(i.stop_TIM4)
+    i.switchLEDmode                          0x08015f0c   Section        0  main.o(i.switchLEDmode)
+    i.system_clock_108m_hxtal                0x08016058   Section        0  system_gd32f10x.o(i.system_clock_108m_hxtal)
+    system_clock_108m_hxtal                  0x08016059   Thumb Code   182  system_gd32f10x.o(i.system_clock_108m_hxtal)
+    i.system_clock_config                    0x0801611c   Section        0  system_gd32f10x.o(i.system_clock_config)
+    system_clock_config                      0x0801611d   Thumb Code     8  system_gd32f10x.o(i.system_clock_config)
+    i.systick_config                         0x08016124   Section        0  systick.o(i.systick_config)
+    i.timer4_isr                             0x08016174   Section        0  main.o(i.timer4_isr)
+    i.timer_deinit                           0x08016268   Section        0  gd32f10x_timer.o(i.timer_deinit)
+    i.timer_disable                          0x08016344   Section        0  gd32f10x_timer.o(i.timer_disable)
+    i.timer_enable                           0x0801634e   Section        0  gd32f10x_timer.o(i.timer_enable)
+    i.timer_init                             0x08016358   Section        0  gd32f10x_timer.o(i.timer_init)
+    i.timer_interrupt_enable                 0x08016438   Section        0  gd32f10x_timer.o(i.timer_interrupt_enable)
+    i.timer_interrupt_flag_clear             0x08016440   Section        0  gd32f10x_timer.o(i.timer_interrupt_flag_clear)
+    i.timer_interrupt_flag_get               0x08016446   Section        0  gd32f10x_timer.o(i.timer_interrupt_flag_get)
+    i.usart_baudrate_set                     0x08016460   Section        0  gd32f10x_usart.o(i.usart_baudrate_set)
+    i.usart_data_receive                     0x080164f0   Section        0  gd32f10x_usart.o(i.usart_data_receive)
+    i.usart_data_transmit                    0x080164fa   Section        0  gd32f10x_usart.o(i.usart_data_transmit)
+    i.usart_deinit                           0x08016504   Section        0  gd32f10x_usart.o(i.usart_deinit)
+    i.usart_enable                           0x08016594   Section        0  gd32f10x_usart.o(i.usart_enable)
+    i.usart_flag_get                         0x0801659e   Section        0  gd32f10x_usart.o(i.usart_flag_get)
+    i.usart_hardware_flow_cts_config         0x080165bc   Section        0  gd32f10x_usart.o(i.usart_hardware_flow_cts_config)
+    i.usart_hardware_flow_rts_config         0x080165d0   Section        0  gd32f10x_usart.o(i.usart_hardware_flow_rts_config)
+    i.usart_interrupt_enable                 0x080165e4   Section        0  gd32f10x_usart.o(i.usart_interrupt_enable)
+    i.usart_interrupt_flag_clear             0x080165fe   Section        0  gd32f10x_usart.o(i.usart_interrupt_flag_clear)
+    i.usart_interrupt_flag_get               0x08016610   Section        0  gd32f10x_usart.o(i.usart_interrupt_flag_get)
+    i.usart_parity_config                    0x08016648   Section        0  gd32f10x_usart.o(i.usart_parity_config)
+    i.usart_receive_config                   0x08016658   Section        0  gd32f10x_usart.o(i.usart_receive_config)
+    i.usart_stop_bit_set                     0x08016668   Section        0  gd32f10x_usart.o(i.usart_stop_bit_set)
+    i.usart_transmit_config                  0x08016678   Section        0  gd32f10x_usart.o(i.usart_transmit_config)
+    i.usart_word_length_set                  0x08016688   Section        0  gd32f10x_usart.o(i.usart_word_length_set)
+    i.usercmd_deque                          0x08016698   Section        0  queue.o(i.usercmd_deque)
+    i.usercmd_enque                          0x080166c8   Section        0  queue.o(i.usercmd_enque)
+    i.wdt_hw_disable                         0x08016730   Section        0  wdt_hw.o(i.wdt_hw_disable)
+    i.wdt_hw_enable                          0x08016744   Section        0  wdt_hw.o(i.wdt_hw_enable)
+    i.wdt_hw_int                             0x08016758   Section        0  wdt_hw.o(i.wdt_hw_int)
+    i.wdt_hw_set_wdi                         0x08016798   Section        0  wdt_hw.o(i.wdt_hw_set_wdi)
+    i.wiz_cs                                 0x080167bc   Section        0  w5500_conf.o(i.wiz_cs)
+    i.wiz_read_buf                           0x080167e0   Section        0  w5500_conf.o(i.wiz_read_buf)
+    i.wiz_write_buf                          0x08016848   Section        0  w5500_conf.o(i.wiz_write_buf)
+    i.write_config_to_flash                  0x080168b0   Section        0  w5500_conf.o(i.write_config_to_flash)
+    i.write_ver_to_flash                     0x0801693c   Section        0  w5500_conf.o(i.write_ver_to_flash)
+    .constdata                               0x080169c0   Section       81  main.o(.constdata)
+    __FUNCTION__                             0x080169f0   Data          33  main.o(.constdata)
+    .constdata                               0x08016a11   Section       70  secs.o(.constdata)
+    .constdata                               0x08016a57   Section       47  gp_io.o(.constdata)
+    __func__                                 0x08016a57   Data          11  gp_io.o(.constdata)
+    __func__                                 0x08016a62   Data          11  gp_io.o(.constdata)
+    __func__                                 0x08016a6d   Data          10  gp_io.o(.constdata)
+    __func__                                 0x08016a77   Data          15  gp_io.o(.constdata)
+    .conststring                             0x08016a88   Section       72  main.o(.conststring)
     .data                                    0x20000000   Section        4  systick.o(.data)
     delay                                    0x20000000   Data           4  systick.o(.data)
     .data                                    0x20000004   Section      148  main.o(.data)
@@ -2484,23 +2480,22 @@ Image Symbol Table
     Crc16CcittxmodemTable                    0x20000390   Data         512  crc16_xmodem.o(.data)
     .data                                    0x20000590   Section        4  rs485.o(.data)
     print_counter                            0x20000590   Data           4  rs485.o(.data)
-    .data                                    0x20000594   Section      105  keypad.o(.data)
+    .data                                    0x20000594   Section       99  keypad.o(.data)
     keypad_op                                0x200005ec   Data           8  keypad.o(.data)
     normal_op                                0x200005f4   Data           1  keypad.o(.data)
     bFlash                                   0x200005f5   Data           1  keypad.o(.data)
-    num                                      0x200005f8   Data           4  keypad.o(.data)
-    toggle                                   0x200005fc   Data           1  keypad.o(.data)
-    .data                                    0x20000600   Section        4  stdout.o(.data)
-    .bss                                     0x20000604   Section      128  main.o(.bss)
-    .bss                                     0x20000684   Section      256  attcp.o(.bss)
-    .bss                                     0x20000784   Section       32  w5500.o(.bss)
-    .bss                                     0x200007a4   Section      200  w5500_conf.o(.bss)
-    .bss                                     0x2000086c   Section     1024  fw_update.o(.bss)
-    .bss                                     0x20000c6c   Section      256  secstcp.o(.bss)
-    .bss                                     0x20000d6c   Section     2112  queue.o(.bss)
-    .bss                                     0x200015ac   Section      390  sio.o(.bss)
-    .bss                                     0x20001734   Section      448  gp_io.o(.bss)
-    STACK                                    0x200018f8   Section     1024  startup_gd32f10x_hd.o(STACK)
+    toggle                                   0x200005f6   Data           1  keypad.o(.data)
+    .data                                    0x200005f8   Section        4  stdout.o(.data)
+    .bss                                     0x200005fc   Section      128  main.o(.bss)
+    .bss                                     0x2000067c   Section      256  attcp.o(.bss)
+    .bss                                     0x2000077c   Section       32  w5500.o(.bss)
+    .bss                                     0x2000079c   Section      200  w5500_conf.o(.bss)
+    .bss                                     0x20000864   Section     1024  fw_update.o(.bss)
+    .bss                                     0x20000c64   Section      256  secstcp.o(.bss)
+    .bss                                     0x20000d64   Section     2112  queue.o(.bss)
+    .bss                                     0x200015a4   Section      390  sio.o(.bss)
+    .bss                                     0x2000172c   Section      448  gp_io.o(.bss)
+    STACK                                    0x200018f0   Section     1024  startup_gd32f10x_hd.o(STACK)
 
     Global Symbols
 
@@ -2716,200 +2711,200 @@ Image Symbol Table
     UsageFault_Handler                       0x080115f1   Thumb Code     4  gd32f10x_it.o(i.UsageFault_Handler)
     Write_Max7219                            0x080115f5   Thumb Code    40  max7219.o(i.Write_Max7219)
     Write_Max7219_byte                       0x0801161d   Thumb Code    62  max7219.o(i.Write_Max7219_byte)
-    _Debug2                                  0x0801165d   Thumb Code   146  main.o(i._Debug2)
-    _Get_UUID                                0x08011715   Thumb Code   206  w5500_conf.o(i._Get_UUID)
-    __0printf                                0x08011829   Thumb Code    22  printfa.o(i.__0printf)
-    __1printf                                0x08011829   Thumb Code     0  printfa.o(i.__0printf)
-    __2printf                                0x08011829   Thumb Code     0  printfa.o(i.__0printf)
-    __c89printf                              0x08011829   Thumb Code     0  printfa.o(i.__0printf)
-    printf                                   0x08011829   Thumb Code     0  printfa.o(i.__0printf)
-    __0sprintf                               0x08011849   Thumb Code    34  printfa.o(i.__0sprintf)
-    __1sprintf                               0x08011849   Thumb Code     0  printfa.o(i.__0sprintf)
-    __2sprintf                               0x08011849   Thumb Code     0  printfa.o(i.__0sprintf)
-    __c89sprintf                             0x08011849   Thumb Code     0  printfa.o(i.__0sprintf)
-    sprintf                                  0x08011849   Thumb Code     0  printfa.o(i.__0sprintf)
-    __0vsprintf                              0x08011871   Thumb Code    30  printfa.o(i.__0vsprintf)
-    __1vsprintf                              0x08011871   Thumb Code     0  printfa.o(i.__0vsprintf)
-    __2vsprintf                              0x08011871   Thumb Code     0  printfa.o(i.__0vsprintf)
-    __c89vsprintf                            0x08011871   Thumb Code     0  printfa.o(i.__0vsprintf)
-    vsprintf                                 0x08011871   Thumb Code     0  printfa.o(i.__0vsprintf)
-    __scatterload_copy                       0x08011895   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080118a3   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080118a5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    amkor_nc01_crc                           0x08012149   Thumb Code    38  main.o(i.amkor_nc01_crc)
-    before_amkor_nc01_filter                 0x08012171   Thumb Code   232  main.o(i.before_amkor_nc01_filter)
-    before_amkor_nc01_rs232_filter           0x080122a5   Thumb Code   232  main.o(i.before_amkor_nc01_rs232_filter)
-    before_secs_filter                       0x080123e5   Thumb Code  1526  main.o(i.before_secs_filter)
-    checkSecsLinkOk                          0x08012a6d   Thumb Code    30  main.o(i.checkSecsLinkOk)
-    close                                    0x08012a9d   Thumb Code    52  socket.o(i.close)
-    close_atsocket                           0x08012ad1   Thumb Code    28  attcp.o(i.close_atsocket)
-    confit_rs485                             0x08012af1   Thumb Code    86  rs485.o(i.confit_rs485)
-    delay_1ms                                0x08012b4d   Thumb Code    16  systick.o(i.delay_1ms)
-    delay_decrement                          0x08012b61   Thumb Code    18  systick.o(i.delay_decrement)
-    delay_ms                                 0x08012b79   Thumb Code    12  utility.o(i.delay_ms)
-    delay_us                                 0x08012b85   Thumb Code    40  utility.o(i.delay_us)
-    disconnect                               0x08012bb5   Thumb Code    38  socket.o(i.disconnect)
-    do_attcp_cmd                             0x08012bdd   Thumb Code   278  attcp.o(i.do_attcp_cmd)
-    do_fw_update                             0x08012d21   Thumb Code   422  fw_update.o(i.do_fw_update)
-    do_secstcp_cmd                           0x08012f01   Thumb Code   286  secstcp.o(i.do_secstcp_cmd)
-    do_udp_config                            0x0801304d   Thumb Code  1226  udp_config.o(i.do_udp_config)
-    eth_rx_enque                             0x08013529   Thumb Code    82  queue.o(i.eth_rx_enque)
-    exti_init                                0x08013581   Thumb Code   184  gd32f10x_exti.o(i.exti_init)
-    exti_interrupt_enable                    0x0801363d   Thumb Code    12  gd32f10x_exti.o(i.exti_interrupt_enable)
-    exti_interrupt_flag_clear                0x0801364d   Thumb Code     6  gd32f10x_exti.o(i.exti_interrupt_flag_clear)
-    exti_interrupt_flag_get                  0x08013659   Thumb Code    18  gd32f10x_exti.o(i.exti_interrupt_flag_get)
-    fmc_bank0_ready_wait                     0x08013671   Thumb Code    34  gd32f10x_fmc.o(i.fmc_bank0_ready_wait)
-    fmc_bank0_state_get                      0x08013695   Thumb Code    44  gd32f10x_fmc.o(i.fmc_bank0_state_get)
-    fmc_bank1_ready_wait                     0x080136c5   Thumb Code    34  gd32f10x_fmc.o(i.fmc_bank1_ready_wait)
-    fmc_bank1_state_get                      0x080136e9   Thumb Code    44  gd32f10x_fmc.o(i.fmc_bank1_state_get)
-    fmc_flag_clear                           0x08013719   Thumb Code    28  gd32f10x_fmc.o(i.fmc_flag_clear)
-    fmc_lock                                 0x08013739   Thumb Code    34  gd32f10x_fmc.o(i.fmc_lock)
-    fmc_page_erase                           0x08013765   Thumb Code   234  gd32f10x_fmc.o(i.fmc_page_erase)
-    fmc_unlock                               0x0801385d   Thumb Code    52  gd32f10x_fmc.o(i.fmc_unlock)
-    fmc_word_program                         0x080138a1   Thumb Code   178  gd32f10x_fmc.o(i.fmc_word_program)
-    fputc                                    0x08013961   Thumb Code    32  main.o(i.fputc)
-    gd_eval_com_init                         0x08013985   Thumb Code   208  board.o(i.gd_eval_com_init)
-    generate_crc16                           0x08013a71   Thumb Code    46  crc16_xmodem.o(i.generate_crc16)
-    getGAR                                   0x08013aa5   Thumb Code    16  w5500.o(i.getGAR)
-    getIINCHIP_TxMAX                         0x08013ab5   Thumb Code    10  w5500.o(i.getIINCHIP_TxMAX)
-    getSIPR                                  0x08013ac5   Thumb Code    18  w5500.o(i.getSIPR)
-    getSUBR                                  0x08013ad7   Thumb Code    18  w5500.o(i.getSUBR)
-    getSn_IR                                 0x08013ae9   Thumb Code    18  w5500.o(i.getSn_IR)
-    getSn_RX_RSR                             0x08013afb   Thumb Code    84  w5500.o(i.getSn_RX_RSR)
-    getSn_SR                                 0x08013b4f   Thumb Code    18  w5500.o(i.getSn_SR)
-    getSn_TX_FSR                             0x08013b61   Thumb Code    84  w5500.o(i.getSn_TX_FSR)
-    get_config                               0x08013bb5   Thumb Code    68  w5500_conf.o(i.get_config)
-    gio_event_deque                          0x08013c09   Thumb Code    38  gp_io.o(i.gio_event_deque)
-    gp_get_in                                0x08013c35   Thumb Code   152  gp_io.o(i.gp_get_in)
-    gp_io_init                               0x08013ce1   Thumb Code   616  gp_io.o(i.gp_io_init)
-    gp_set_out                               0x08013f51   Thumb Code   252  gp_io.o(i.gp_set_out)
-    gpio_bit_reset                           0x08014065   Thumb Code     4  gd32f10x_gpio.o(i.gpio_bit_reset)
-    gpio_bit_set                             0x08014069   Thumb Code     4  gd32f10x_gpio.o(i.gpio_bit_set)
-    gpio_bit_write                           0x0801406d   Thumb Code    10  gd32f10x_gpio.o(i.gpio_bit_write)
-    gpio_exti_source_select                  0x08014079   Thumb Code   146  gd32f10x_gpio.o(i.gpio_exti_source_select)
-    gpio_for_w5500_config                    0x08014111   Thumb Code    60  w5500_conf.o(i.gpio_for_w5500_config)
-    gpio_init                                0x08014155   Thumb Code   172  gd32f10x_gpio.o(i.gpio_init)
-    gpio_input_bit_get                       0x08014201   Thumb Code    16  gd32f10x_gpio.o(i.gpio_input_bit_get)
-    gpio_pin_remap_config                    0x08014211   Thumb Code   138  gd32f10x_gpio.o(i.gpio_pin_remap_config)
-    iinchip_csoff                            0x080142a1   Thumb Code    10  w5500_conf.o(i.iinchip_csoff)
-    iinchip_cson                             0x080142ab   Thumb Code    10  w5500_conf.o(i.iinchip_cson)
-    init_rs485                               0x080142b5   Thumb Code    62  rs485.o(i.init_rs485)
-    keypad_init                              0x080142f9   Thumb Code    28  keypad.o(i.keypad_init)
-    led_init                                 0x08014321   Thumb Code    32  led.o(i.led_init)
-    led_off                                  0x08014345   Thumb Code    34  led.o(i.led_off)
-    led_on                                   0x0801436d   Thumb Code    34  led.o(i.led_on)
-    led_spark                                0x08014395   Thumb Code   160  main.o(i.led_spark)
-    led_toggle                               0x0801447d   Thumb Code    50  led.o(i.led_toggle)
-    listen                                   0x080144b5   Thumb Code    62  socket.o(i.listen)
-    load_nc01_parameters                     0x080144f5   Thumb Code   388  keypad.o(i.load_nc01_parameters)
-    magnetic_gate_beep_on                    0x08014681   Thumb Code    18  main.o(i.magnetic_gate_beep_on)
-    main                                     0x080146ad   Thumb Code   982  main.o(i.main)
-    myputc                                   0x08014bc5   Thumb Code    30  main.o(i.myputc)
-    myputstr                                 0x08014be9   Thumb Code    26  main.o(i.myputstr)
-    nvic_configuration                       0x08014c05   Thumb Code    12  board.o(i.nvic_configuration)
-    nvic_irq_enable                          0x08014c15   Thumb Code   162  gd32f10x_misc.o(i.nvic_irq_enable)
-    nvic_priority_group_set                  0x08014cc1   Thumb Code    10  gd32f10x_misc.o(i.nvic_priority_group_set)
-    nvic_vector_table_set                    0x08014cd5   Thumb Code    16  gd32f10x_misc.o(i.nvic_vector_table_set)
-    process_com1_com2_test                   0x08014ced   Thumb Code   210  main.o(i.process_com1_com2_test)
-    process_gpi_filter                       0x08014ddd   Thumb Code   160  main.o(i.process_gpi_filter)
-    process_rcv_amkor_nc01_cmd               0x08014ea1   Thumb Code    74  main.o(i.process_rcv_amkor_nc01_cmd)
-    process_rcv_amkor_nc01_rs232_cmd         0x08014f09   Thumb Code    82  main.o(i.process_rcv_amkor_nc01_rs232_cmd)
-    process_rcv_secs_cmd                     0x08014f99   Thumb Code    70  main.o(i.process_rcv_secs_cmd)
-    put_test_data_queue                      0x08014fdf   Thumb Code    44  main.o(i.put_test_data_queue)
-    rcu_all_reset_flag_clear                 0x0801500d   Thumb Code    14  gd32f10x_rcu.o(i.rcu_all_reset_flag_clear)
-    rcu_clock_freq_get                       0x08015021   Thumb Code   264  gd32f10x_rcu.o(i.rcu_clock_freq_get)
-    rcu_flag_get                             0x08015145   Thumb Code    30  gd32f10x_rcu.o(i.rcu_flag_get)
-    rcu_periph_clock_enable                  0x08015169   Thumb Code    28  gd32f10x_rcu.o(i.rcu_periph_clock_enable)
-    rcu_periph_reset_disable                 0x08015189   Thumb Code    28  gd32f10x_rcu.o(i.rcu_periph_reset_disable)
-    rcu_periph_reset_enable                  0x080151a9   Thumb Code    28  gd32f10x_rcu.o(i.rcu_periph_reset_enable)
-    reboot                                   0x080151c9   Thumb Code    10  w5500_conf.o(i.reboot)
-    recv                                     0x080151dd   Thumb Code    66  socket.o(i.recv)
-    recv_data_processing                     0x08015221   Thumb Code   116  w5500.o(i.recv_data_processing)
-    recvfrom                                 0x080152b5   Thumb Code   486  socket.o(i.recvfrom)
-    report_S2F18                             0x080154b5   Thumb Code   186  secs.o(i.report_S2F18)
-    report_S2F22                             0x080155b9   Thumb Code   148  secs.o(i.report_S2F22)
-    reset_gpi_filter                         0x08015695   Thumb Code    56  main.o(i.reset_gpi_filter)
-    reset_w5500                              0x080156d1   Thumb Code    38  w5500_conf.o(i.reset_w5500)
-    rtc_configuration_mode_enter             0x080156fd   Thumb Code    14  gd32f10x_rtc.o(i.rtc_configuration_mode_enter)
-    rtc_configuration_mode_exit              0x08015711   Thumb Code    14  gd32f10x_rtc.o(i.rtc_configuration_mode_exit)
-    rtc_counter_get                          0x08015725   Thumb Code    16  gd32f10x_rtc.o(i.rtc_counter_get)
-    rtc_counter_set                          0x08015739   Thumb Code    26  gd32f10x_rtc.o(i.rtc_counter_set)
-    rtc_flag_clear                           0x08015759   Thumb Code    12  gd32f10x_rtc.o(i.rtc_flag_clear)
-    rtc_flag_get                             0x08015769   Thumb Code    18  gd32f10x_rtc.o(i.rtc_flag_get)
-    rtc_lwoff_wait                           0x08015781   Thumb Code    16  gd32f10x_rtc.o(i.rtc_lwoff_wait)
-    secs_post_received_data                  0x08015795   Thumb Code    50  sio.o(i.secs_post_received_data)
-    send                                     0x080157cd   Thumb Code   216  socket.o(i.send)
-    send_data_processing                     0x080158b9   Thumb Code   116  w5500.o(i.send_data_processing)
-    send_secs_socket                         0x0801594d   Thumb Code    54  secstcp.o(i.send_secs_socket)
-    send_tcp_socket                          0x08015989   Thumb Code    54  attcp.o(i.send_tcp_socket)
-    sendto                                   0x080159c5   Thumb Code   268  socket.o(i.sendto)
-    setGAR                                   0x08015ad1   Thumb Code    16  w5500.o(i.setGAR)
-    setRCR                                   0x08015ae1   Thumb Code    16  w5500.o(i.setRCR)
-    setRTR                                   0x08015af1   Thumb Code    26  w5500.o(i.setRTR)
-    setSHAR                                  0x08015b0b   Thumb Code    18  w5500.o(i.setSHAR)
-    setSIPR                                  0x08015b1d   Thumb Code    18  w5500.o(i.setSIPR)
-    setSUBR                                  0x08015b2f   Thumb Code    18  w5500.o(i.setSUBR)
-    setSn_IR                                 0x08015b41   Thumb Code    22  w5500.o(i.setSn_IR)
-    set_default                              0x08015b59   Thumb Code   142  w5500_conf.o(i.set_default)
-    set_network                              0x08015c01   Thumb Code   164  w5500_conf.o(i.set_network)
-    sio_byte_buf_enqueue                     0x08015d11   Thumb Code    16  sio.o(i.sio_byte_buf_enqueue)
-    sio_byte_buf_flush                       0x08015d21   Thumb Code    14  sio.o(i.sio_byte_buf_flush)
-    sio_post_received_data                   0x08015d31   Thumb Code    50  sio.o(i.sio_post_received_data)
-    socket                                   0x08015d69   Thumb Code   192  socket.o(i.socket)
-    socket_buf_init                          0x08015e2d   Thumb Code   128  w5500.o(i.socket_buf_init)
-    spi_crc_polynomial_set                   0x08015eb5   Thumb Code    12  gd32f10x_spi.o(i.spi_crc_polynomial_set)
-    spi_enable                               0x08015ec1   Thumb Code    10  gd32f10x_spi.o(i.spi_enable)
-    spi_i2s_data_receive                     0x08015ecb   Thumb Code     8  gd32f10x_spi.o(i.spi_i2s_data_receive)
-    spi_i2s_data_transmit                    0x08015ed3   Thumb Code     4  gd32f10x_spi.o(i.spi_i2s_data_transmit)
-    spi_i2s_flag_get                         0x08015ed7   Thumb Code    16  gd32f10x_spi.o(i.spi_i2s_flag_get)
-    spi_init                                 0x08015ee7   Thumb Code    50  gd32f10x_spi.o(i.spi_init)
-    start_TIM4                               0x08015f19   Thumb Code    10  main.o(i.start_TIM4)
-    stop_TIM4                                0x08015f29   Thumb Code    10  main.o(i.stop_TIM4)
-    switchLEDmode                            0x08015f39   Thumb Code   310  main.o(i.switchLEDmode)
-    systick_config                           0x08016151   Thumb Code    74  systick.o(i.systick_config)
-    timer4_isr                               0x080161a1   Thumb Code   198  main.o(i.timer4_isr)
-    timer_deinit                             0x08016295   Thumb Code   210  gd32f10x_timer.o(i.timer_deinit)
-    timer_disable                            0x08016371   Thumb Code    10  gd32f10x_timer.o(i.timer_disable)
-    timer_enable                             0x0801637b   Thumb Code    10  gd32f10x_timer.o(i.timer_enable)
-    timer_init                               0x08016385   Thumb Code   170  gd32f10x_timer.o(i.timer_init)
-    timer_interrupt_enable                   0x08016465   Thumb Code     8  gd32f10x_timer.o(i.timer_interrupt_enable)
-    timer_interrupt_flag_clear               0x0801646d   Thumb Code     6  gd32f10x_timer.o(i.timer_interrupt_flag_clear)
-    timer_interrupt_flag_get                 0x08016473   Thumb Code    24  gd32f10x_timer.o(i.timer_interrupt_flag_get)
-    usart_baudrate_set                       0x0801648d   Thumb Code   136  gd32f10x_usart.o(i.usart_baudrate_set)
-    usart_data_receive                       0x0801651d   Thumb Code    10  gd32f10x_usart.o(i.usart_data_receive)
-    usart_data_transmit                      0x08016527   Thumb Code     8  gd32f10x_usart.o(i.usart_data_transmit)
-    usart_deinit                             0x08016531   Thumb Code   136  gd32f10x_usart.o(i.usart_deinit)
-    usart_enable                             0x080165c1   Thumb Code    10  gd32f10x_usart.o(i.usart_enable)
-    usart_flag_get                           0x080165cb   Thumb Code    30  gd32f10x_usart.o(i.usart_flag_get)
-    usart_hardware_flow_cts_config           0x080165e9   Thumb Code    20  gd32f10x_usart.o(i.usart_hardware_flow_cts_config)
-    usart_hardware_flow_rts_config           0x080165fd   Thumb Code    20  gd32f10x_usart.o(i.usart_hardware_flow_rts_config)
-    usart_interrupt_enable                   0x08016611   Thumb Code    26  gd32f10x_usart.o(i.usart_interrupt_enable)
-    usart_interrupt_flag_clear               0x0801662b   Thumb Code    18  gd32f10x_usart.o(i.usart_interrupt_flag_clear)
-    usart_interrupt_flag_get                 0x0801663d   Thumb Code    56  gd32f10x_usart.o(i.usart_interrupt_flag_get)
-    usart_parity_config                      0x08016675   Thumb Code    16  gd32f10x_usart.o(i.usart_parity_config)
-    usart_receive_config                     0x08016685   Thumb Code    16  gd32f10x_usart.o(i.usart_receive_config)
-    usart_stop_bit_set                       0x08016695   Thumb Code    16  gd32f10x_usart.o(i.usart_stop_bit_set)
-    usart_transmit_config                    0x080166a5   Thumb Code    16  gd32f10x_usart.o(i.usart_transmit_config)
-    usart_word_length_set                    0x080166b5   Thumb Code    16  gd32f10x_usart.o(i.usart_word_length_set)
-    usercmd_deque                            0x080166c5   Thumb Code    44  queue.o(i.usercmd_deque)
-    usercmd_enque                            0x080166f5   Thumb Code    98  queue.o(i.usercmd_enque)
-    wdt_hw_disable                           0x0801675d   Thumb Code    14  wdt_hw.o(i.wdt_hw_disable)
-    wdt_hw_enable                            0x08016771   Thumb Code    14  wdt_hw.o(i.wdt_hw_enable)
-    wdt_hw_int                               0x08016785   Thumb Code    60  wdt_hw.o(i.wdt_hw_int)
-    wdt_hw_set_wdi                           0x080167c5   Thumb Code    32  wdt_hw.o(i.wdt_hw_set_wdi)
-    wiz_cs                                   0x080167e9   Thumb Code    32  w5500_conf.o(i.wiz_cs)
-    wiz_read_buf                             0x0801680d   Thumb Code    78  w5500_conf.o(i.wiz_read_buf)
-    wiz_write_buf                            0x08016875   Thumb Code    80  w5500_conf.o(i.wiz_write_buf)
-    write_config_to_flash                    0x080168dd   Thumb Code   102  w5500_conf.o(i.write_config_to_flash)
-    write_ver_to_flash                       0x08016969   Thumb Code   104  w5500_conf.o(i.write_ver_to_flash)
-    FWSWver                                  0x080169ec   Data           2  main.o(.constdata)
-    SECS_S2F17_HEADER_RESP                   0x08016a3d   Data          14  secs.o(.constdata)
-    SECS_S2F18_HEADER_RESP                   0x08016a4b   Data          14  secs.o(.constdata)
-    SECS_S2F22_HEADER_RESP                   0x08016a59   Data          14  secs.o(.constdata)
-    SECS_S5F1_HEADER_RESP                    0x08016a67   Data          14  secs.o(.constdata)
-    SECS_S18F81_HEADER_RESP                  0x08016a75   Data          14  secs.o(.constdata)
-    Region$$Table$$Base                      0x08016afc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08016b1c   Number         0  anon$$obj.o(Region$$Table)
+    _Debug2                                  0x0801165d   Thumb Code   106  main.o(i._Debug2)
+    _Get_UUID                                0x080116f1   Thumb Code   206  w5500_conf.o(i._Get_UUID)
+    __0printf                                0x08011805   Thumb Code    22  printfa.o(i.__0printf)
+    __1printf                                0x08011805   Thumb Code     0  printfa.o(i.__0printf)
+    __2printf                                0x08011805   Thumb Code     0  printfa.o(i.__0printf)
+    __c89printf                              0x08011805   Thumb Code     0  printfa.o(i.__0printf)
+    printf                                   0x08011805   Thumb Code     0  printfa.o(i.__0printf)
+    __0sprintf                               0x08011825   Thumb Code    34  printfa.o(i.__0sprintf)
+    __1sprintf                               0x08011825   Thumb Code     0  printfa.o(i.__0sprintf)
+    __2sprintf                               0x08011825   Thumb Code     0  printfa.o(i.__0sprintf)
+    __c89sprintf                             0x08011825   Thumb Code     0  printfa.o(i.__0sprintf)
+    sprintf                                  0x08011825   Thumb Code     0  printfa.o(i.__0sprintf)
+    __0vsprintf                              0x0801184d   Thumb Code    30  printfa.o(i.__0vsprintf)
+    __1vsprintf                              0x0801184d   Thumb Code     0  printfa.o(i.__0vsprintf)
+    __2vsprintf                              0x0801184d   Thumb Code     0  printfa.o(i.__0vsprintf)
+    __c89vsprintf                            0x0801184d   Thumb Code     0  printfa.o(i.__0vsprintf)
+    vsprintf                                 0x0801184d   Thumb Code     0  printfa.o(i.__0vsprintf)
+    __scatterload_copy                       0x08011871   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0801187f   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08011881   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    amkor_nc01_crc                           0x08012125   Thumb Code    38  main.o(i.amkor_nc01_crc)
+    before_amkor_nc01_filter                 0x0801214d   Thumb Code   232  main.o(i.before_amkor_nc01_filter)
+    before_amkor_nc01_rs232_filter           0x08012281   Thumb Code   232  main.o(i.before_amkor_nc01_rs232_filter)
+    before_secs_filter                       0x080123c1   Thumb Code  1526  main.o(i.before_secs_filter)
+    checkSecsLinkOk                          0x08012a49   Thumb Code    30  main.o(i.checkSecsLinkOk)
+    close                                    0x08012a79   Thumb Code    52  socket.o(i.close)
+    close_atsocket                           0x08012aad   Thumb Code    28  attcp.o(i.close_atsocket)
+    confit_rs485                             0x08012acd   Thumb Code    86  rs485.o(i.confit_rs485)
+    delay_1ms                                0x08012b29   Thumb Code    16  systick.o(i.delay_1ms)
+    delay_decrement                          0x08012b3d   Thumb Code    18  systick.o(i.delay_decrement)
+    delay_ms                                 0x08012b55   Thumb Code    12  utility.o(i.delay_ms)
+    delay_us                                 0x08012b61   Thumb Code    40  utility.o(i.delay_us)
+    disconnect                               0x08012b91   Thumb Code    38  socket.o(i.disconnect)
+    do_attcp_cmd                             0x08012bb9   Thumb Code   278  attcp.o(i.do_attcp_cmd)
+    do_fw_update                             0x08012cfd   Thumb Code   414  fw_update.o(i.do_fw_update)
+    do_secstcp_cmd                           0x08012ed5   Thumb Code   286  secstcp.o(i.do_secstcp_cmd)
+    do_udp_config                            0x08013021   Thumb Code  1226  udp_config.o(i.do_udp_config)
+    eth_rx_enque                             0x080134fd   Thumb Code    82  queue.o(i.eth_rx_enque)
+    exti_init                                0x08013555   Thumb Code   184  gd32f10x_exti.o(i.exti_init)
+    exti_interrupt_enable                    0x08013611   Thumb Code    12  gd32f10x_exti.o(i.exti_interrupt_enable)
+    exti_interrupt_flag_clear                0x08013621   Thumb Code     6  gd32f10x_exti.o(i.exti_interrupt_flag_clear)
+    exti_interrupt_flag_get                  0x0801362d   Thumb Code    18  gd32f10x_exti.o(i.exti_interrupt_flag_get)
+    fmc_bank0_ready_wait                     0x08013645   Thumb Code    34  gd32f10x_fmc.o(i.fmc_bank0_ready_wait)
+    fmc_bank0_state_get                      0x08013669   Thumb Code    44  gd32f10x_fmc.o(i.fmc_bank0_state_get)
+    fmc_bank1_ready_wait                     0x08013699   Thumb Code    34  gd32f10x_fmc.o(i.fmc_bank1_ready_wait)
+    fmc_bank1_state_get                      0x080136bd   Thumb Code    44  gd32f10x_fmc.o(i.fmc_bank1_state_get)
+    fmc_flag_clear                           0x080136ed   Thumb Code    28  gd32f10x_fmc.o(i.fmc_flag_clear)
+    fmc_lock                                 0x0801370d   Thumb Code    34  gd32f10x_fmc.o(i.fmc_lock)
+    fmc_page_erase                           0x08013739   Thumb Code   234  gd32f10x_fmc.o(i.fmc_page_erase)
+    fmc_unlock                               0x08013831   Thumb Code    52  gd32f10x_fmc.o(i.fmc_unlock)
+    fmc_word_program                         0x08013875   Thumb Code   178  gd32f10x_fmc.o(i.fmc_word_program)
+    fputc                                    0x08013935   Thumb Code    32  main.o(i.fputc)
+    gd_eval_com_init                         0x08013959   Thumb Code   208  board.o(i.gd_eval_com_init)
+    generate_crc16                           0x08013a45   Thumb Code    46  crc16_xmodem.o(i.generate_crc16)
+    getGAR                                   0x08013a79   Thumb Code    16  w5500.o(i.getGAR)
+    getIINCHIP_TxMAX                         0x08013a89   Thumb Code    10  w5500.o(i.getIINCHIP_TxMAX)
+    getSIPR                                  0x08013a99   Thumb Code    18  w5500.o(i.getSIPR)
+    getSUBR                                  0x08013aab   Thumb Code    18  w5500.o(i.getSUBR)
+    getSn_IR                                 0x08013abd   Thumb Code    18  w5500.o(i.getSn_IR)
+    getSn_RX_RSR                             0x08013acf   Thumb Code    84  w5500.o(i.getSn_RX_RSR)
+    getSn_SR                                 0x08013b23   Thumb Code    18  w5500.o(i.getSn_SR)
+    getSn_TX_FSR                             0x08013b35   Thumb Code    84  w5500.o(i.getSn_TX_FSR)
+    get_config                               0x08013b89   Thumb Code    68  w5500_conf.o(i.get_config)
+    gio_event_deque                          0x08013bdd   Thumb Code    38  gp_io.o(i.gio_event_deque)
+    gp_get_in                                0x08013c09   Thumb Code   152  gp_io.o(i.gp_get_in)
+    gp_io_init                               0x08013cb5   Thumb Code   616  gp_io.o(i.gp_io_init)
+    gp_set_out                               0x08013f25   Thumb Code   252  gp_io.o(i.gp_set_out)
+    gpio_bit_reset                           0x08014039   Thumb Code     4  gd32f10x_gpio.o(i.gpio_bit_reset)
+    gpio_bit_set                             0x0801403d   Thumb Code     4  gd32f10x_gpio.o(i.gpio_bit_set)
+    gpio_bit_write                           0x08014041   Thumb Code    10  gd32f10x_gpio.o(i.gpio_bit_write)
+    gpio_exti_source_select                  0x0801404d   Thumb Code   146  gd32f10x_gpio.o(i.gpio_exti_source_select)
+    gpio_for_w5500_config                    0x080140e5   Thumb Code    60  w5500_conf.o(i.gpio_for_w5500_config)
+    gpio_init                                0x08014129   Thumb Code   172  gd32f10x_gpio.o(i.gpio_init)
+    gpio_input_bit_get                       0x080141d5   Thumb Code    16  gd32f10x_gpio.o(i.gpio_input_bit_get)
+    gpio_pin_remap_config                    0x080141e5   Thumb Code   138  gd32f10x_gpio.o(i.gpio_pin_remap_config)
+    iinchip_csoff                            0x08014275   Thumb Code    10  w5500_conf.o(i.iinchip_csoff)
+    iinchip_cson                             0x0801427f   Thumb Code    10  w5500_conf.o(i.iinchip_cson)
+    init_rs485                               0x08014289   Thumb Code    62  rs485.o(i.init_rs485)
+    keypad_init                              0x080142cd   Thumb Code    28  keypad.o(i.keypad_init)
+    led_init                                 0x080142f5   Thumb Code    32  led.o(i.led_init)
+    led_off                                  0x08014319   Thumb Code    34  led.o(i.led_off)
+    led_on                                   0x08014341   Thumb Code    34  led.o(i.led_on)
+    led_spark                                0x08014369   Thumb Code   160  main.o(i.led_spark)
+    led_toggle                               0x08014451   Thumb Code    50  led.o(i.led_toggle)
+    listen                                   0x08014489   Thumb Code    62  socket.o(i.listen)
+    load_nc01_parameters                     0x080144c9   Thumb Code   388  keypad.o(i.load_nc01_parameters)
+    magnetic_gate_beep_on                    0x08014655   Thumb Code    18  main.o(i.magnetic_gate_beep_on)
+    main                                     0x08014681   Thumb Code   982  main.o(i.main)
+    myputc                                   0x08014b99   Thumb Code    30  main.o(i.myputc)
+    myputstr                                 0x08014bbd   Thumb Code    26  main.o(i.myputstr)
+    nvic_configuration                       0x08014bd9   Thumb Code    12  board.o(i.nvic_configuration)
+    nvic_irq_enable                          0x08014be9   Thumb Code   162  gd32f10x_misc.o(i.nvic_irq_enable)
+    nvic_priority_group_set                  0x08014c95   Thumb Code    10  gd32f10x_misc.o(i.nvic_priority_group_set)
+    nvic_vector_table_set                    0x08014ca9   Thumb Code    16  gd32f10x_misc.o(i.nvic_vector_table_set)
+    process_com1_com2_test                   0x08014cc1   Thumb Code   210  main.o(i.process_com1_com2_test)
+    process_gpi_filter                       0x08014db1   Thumb Code   160  main.o(i.process_gpi_filter)
+    process_rcv_amkor_nc01_cmd               0x08014e75   Thumb Code    74  main.o(i.process_rcv_amkor_nc01_cmd)
+    process_rcv_amkor_nc01_rs232_cmd         0x08014edd   Thumb Code    82  main.o(i.process_rcv_amkor_nc01_rs232_cmd)
+    process_rcv_secs_cmd                     0x08014f6d   Thumb Code    70  main.o(i.process_rcv_secs_cmd)
+    put_test_data_queue                      0x08014fb3   Thumb Code    44  main.o(i.put_test_data_queue)
+    rcu_all_reset_flag_clear                 0x08014fe1   Thumb Code    14  gd32f10x_rcu.o(i.rcu_all_reset_flag_clear)
+    rcu_clock_freq_get                       0x08014ff5   Thumb Code   264  gd32f10x_rcu.o(i.rcu_clock_freq_get)
+    rcu_flag_get                             0x08015119   Thumb Code    30  gd32f10x_rcu.o(i.rcu_flag_get)
+    rcu_periph_clock_enable                  0x0801513d   Thumb Code    28  gd32f10x_rcu.o(i.rcu_periph_clock_enable)
+    rcu_periph_reset_disable                 0x0801515d   Thumb Code    28  gd32f10x_rcu.o(i.rcu_periph_reset_disable)
+    rcu_periph_reset_enable                  0x0801517d   Thumb Code    28  gd32f10x_rcu.o(i.rcu_periph_reset_enable)
+    reboot                                   0x0801519d   Thumb Code    10  w5500_conf.o(i.reboot)
+    recv                                     0x080151b1   Thumb Code    66  socket.o(i.recv)
+    recv_data_processing                     0x080151f5   Thumb Code   116  w5500.o(i.recv_data_processing)
+    recvfrom                                 0x08015289   Thumb Code   486  socket.o(i.recvfrom)
+    report_S2F18                             0x08015489   Thumb Code   186  secs.o(i.report_S2F18)
+    report_S2F22                             0x0801558d   Thumb Code   148  secs.o(i.report_S2F22)
+    reset_gpi_filter                         0x08015669   Thumb Code    56  main.o(i.reset_gpi_filter)
+    reset_w5500                              0x080156a5   Thumb Code    38  w5500_conf.o(i.reset_w5500)
+    rtc_configuration_mode_enter             0x080156d1   Thumb Code    14  gd32f10x_rtc.o(i.rtc_configuration_mode_enter)
+    rtc_configuration_mode_exit              0x080156e5   Thumb Code    14  gd32f10x_rtc.o(i.rtc_configuration_mode_exit)
+    rtc_counter_get                          0x080156f9   Thumb Code    16  gd32f10x_rtc.o(i.rtc_counter_get)
+    rtc_counter_set                          0x0801570d   Thumb Code    26  gd32f10x_rtc.o(i.rtc_counter_set)
+    rtc_flag_clear                           0x0801572d   Thumb Code    12  gd32f10x_rtc.o(i.rtc_flag_clear)
+    rtc_flag_get                             0x0801573d   Thumb Code    18  gd32f10x_rtc.o(i.rtc_flag_get)
+    rtc_lwoff_wait                           0x08015755   Thumb Code    16  gd32f10x_rtc.o(i.rtc_lwoff_wait)
+    secs_post_received_data                  0x08015769   Thumb Code    50  sio.o(i.secs_post_received_data)
+    send                                     0x080157a1   Thumb Code   216  socket.o(i.send)
+    send_data_processing                     0x0801588d   Thumb Code   116  w5500.o(i.send_data_processing)
+    send_secs_socket                         0x08015921   Thumb Code    54  secstcp.o(i.send_secs_socket)
+    send_tcp_socket                          0x0801595d   Thumb Code    54  attcp.o(i.send_tcp_socket)
+    sendto                                   0x08015999   Thumb Code   268  socket.o(i.sendto)
+    setGAR                                   0x08015aa5   Thumb Code    16  w5500.o(i.setGAR)
+    setRCR                                   0x08015ab5   Thumb Code    16  w5500.o(i.setRCR)
+    setRTR                                   0x08015ac5   Thumb Code    26  w5500.o(i.setRTR)
+    setSHAR                                  0x08015adf   Thumb Code    18  w5500.o(i.setSHAR)
+    setSIPR                                  0x08015af1   Thumb Code    18  w5500.o(i.setSIPR)
+    setSUBR                                  0x08015b03   Thumb Code    18  w5500.o(i.setSUBR)
+    setSn_IR                                 0x08015b15   Thumb Code    22  w5500.o(i.setSn_IR)
+    set_default                              0x08015b2d   Thumb Code   142  w5500_conf.o(i.set_default)
+    set_network                              0x08015bd5   Thumb Code   164  w5500_conf.o(i.set_network)
+    sio_byte_buf_enqueue                     0x08015ce5   Thumb Code    16  sio.o(i.sio_byte_buf_enqueue)
+    sio_byte_buf_flush                       0x08015cf5   Thumb Code    14  sio.o(i.sio_byte_buf_flush)
+    sio_post_received_data                   0x08015d05   Thumb Code    50  sio.o(i.sio_post_received_data)
+    socket                                   0x08015d3d   Thumb Code   192  socket.o(i.socket)
+    socket_buf_init                          0x08015e01   Thumb Code   128  w5500.o(i.socket_buf_init)
+    spi_crc_polynomial_set                   0x08015e89   Thumb Code    12  gd32f10x_spi.o(i.spi_crc_polynomial_set)
+    spi_enable                               0x08015e95   Thumb Code    10  gd32f10x_spi.o(i.spi_enable)
+    spi_i2s_data_receive                     0x08015e9f   Thumb Code     8  gd32f10x_spi.o(i.spi_i2s_data_receive)
+    spi_i2s_data_transmit                    0x08015ea7   Thumb Code     4  gd32f10x_spi.o(i.spi_i2s_data_transmit)
+    spi_i2s_flag_get                         0x08015eab   Thumb Code    16  gd32f10x_spi.o(i.spi_i2s_flag_get)
+    spi_init                                 0x08015ebb   Thumb Code    50  gd32f10x_spi.o(i.spi_init)
+    start_TIM4                               0x08015eed   Thumb Code    10  main.o(i.start_TIM4)
+    stop_TIM4                                0x08015efd   Thumb Code    10  main.o(i.stop_TIM4)
+    switchLEDmode                            0x08015f0d   Thumb Code   310  main.o(i.switchLEDmode)
+    systick_config                           0x08016125   Thumb Code    74  systick.o(i.systick_config)
+    timer4_isr                               0x08016175   Thumb Code   198  main.o(i.timer4_isr)
+    timer_deinit                             0x08016269   Thumb Code   210  gd32f10x_timer.o(i.timer_deinit)
+    timer_disable                            0x08016345   Thumb Code    10  gd32f10x_timer.o(i.timer_disable)
+    timer_enable                             0x0801634f   Thumb Code    10  gd32f10x_timer.o(i.timer_enable)
+    timer_init                               0x08016359   Thumb Code   170  gd32f10x_timer.o(i.timer_init)
+    timer_interrupt_enable                   0x08016439   Thumb Code     8  gd32f10x_timer.o(i.timer_interrupt_enable)
+    timer_interrupt_flag_clear               0x08016441   Thumb Code     6  gd32f10x_timer.o(i.timer_interrupt_flag_clear)
+    timer_interrupt_flag_get                 0x08016447   Thumb Code    24  gd32f10x_timer.o(i.timer_interrupt_flag_get)
+    usart_baudrate_set                       0x08016461   Thumb Code   136  gd32f10x_usart.o(i.usart_baudrate_set)
+    usart_data_receive                       0x080164f1   Thumb Code    10  gd32f10x_usart.o(i.usart_data_receive)
+    usart_data_transmit                      0x080164fb   Thumb Code     8  gd32f10x_usart.o(i.usart_data_transmit)
+    usart_deinit                             0x08016505   Thumb Code   136  gd32f10x_usart.o(i.usart_deinit)
+    usart_enable                             0x08016595   Thumb Code    10  gd32f10x_usart.o(i.usart_enable)
+    usart_flag_get                           0x0801659f   Thumb Code    30  gd32f10x_usart.o(i.usart_flag_get)
+    usart_hardware_flow_cts_config           0x080165bd   Thumb Code    20  gd32f10x_usart.o(i.usart_hardware_flow_cts_config)
+    usart_hardware_flow_rts_config           0x080165d1   Thumb Code    20  gd32f10x_usart.o(i.usart_hardware_flow_rts_config)
+    usart_interrupt_enable                   0x080165e5   Thumb Code    26  gd32f10x_usart.o(i.usart_interrupt_enable)
+    usart_interrupt_flag_clear               0x080165ff   Thumb Code    18  gd32f10x_usart.o(i.usart_interrupt_flag_clear)
+    usart_interrupt_flag_get                 0x08016611   Thumb Code    56  gd32f10x_usart.o(i.usart_interrupt_flag_get)
+    usart_parity_config                      0x08016649   Thumb Code    16  gd32f10x_usart.o(i.usart_parity_config)
+    usart_receive_config                     0x08016659   Thumb Code    16  gd32f10x_usart.o(i.usart_receive_config)
+    usart_stop_bit_set                       0x08016669   Thumb Code    16  gd32f10x_usart.o(i.usart_stop_bit_set)
+    usart_transmit_config                    0x08016679   Thumb Code    16  gd32f10x_usart.o(i.usart_transmit_config)
+    usart_word_length_set                    0x08016689   Thumb Code    16  gd32f10x_usart.o(i.usart_word_length_set)
+    usercmd_deque                            0x08016699   Thumb Code    44  queue.o(i.usercmd_deque)
+    usercmd_enque                            0x080166c9   Thumb Code    98  queue.o(i.usercmd_enque)
+    wdt_hw_disable                           0x08016731   Thumb Code    14  wdt_hw.o(i.wdt_hw_disable)
+    wdt_hw_enable                            0x08016745   Thumb Code    14  wdt_hw.o(i.wdt_hw_enable)
+    wdt_hw_int                               0x08016759   Thumb Code    60  wdt_hw.o(i.wdt_hw_int)
+    wdt_hw_set_wdi                           0x08016799   Thumb Code    32  wdt_hw.o(i.wdt_hw_set_wdi)
+    wiz_cs                                   0x080167bd   Thumb Code    32  w5500_conf.o(i.wiz_cs)
+    wiz_read_buf                             0x080167e1   Thumb Code    78  w5500_conf.o(i.wiz_read_buf)
+    wiz_write_buf                            0x08016849   Thumb Code    80  w5500_conf.o(i.wiz_write_buf)
+    write_config_to_flash                    0x080168b1   Thumb Code   102  w5500_conf.o(i.write_config_to_flash)
+    write_ver_to_flash                       0x0801693d   Thumb Code   104  w5500_conf.o(i.write_ver_to_flash)
+    FWSWver                                  0x080169c0   Data           2  main.o(.constdata)
+    SECS_S2F17_HEADER_RESP                   0x08016a11   Data          14  secs.o(.constdata)
+    SECS_S2F18_HEADER_RESP                   0x08016a1f   Data          14  secs.o(.constdata)
+    SECS_S2F22_HEADER_RESP                   0x08016a2d   Data          14  secs.o(.constdata)
+    SECS_S5F1_HEADER_RESP                    0x08016a3b   Data          14  secs.o(.constdata)
+    SECS_S18F81_HEADER_RESP                  0x08016a49   Data          14  secs.o(.constdata)
+    Region$$Table$$Base                      0x08016ad0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08016af0   Number         0  anon$$obj.o(Region$$Table)
     hw_wdt_test                              0x20000004   Data           1  main.o(.data)
     link_test_tick                           0x20000008   Data           4  main.o(.data)
     link_ok                                  0x2000000c   Data           4  main.o(.data)
@@ -3004,26 +2999,26 @@ Image Symbol Table
     SECS_S18F7X_Sn                           0x2000038b   Data           1  secs.o(.data)
     timedisplay                              0x2000038c   Data           4  rtc.o(.data)
     fnx_par                                  0x20000594   Data          88  keypad.o(.data)
-    __stdout                                 0x20000600   Data           4  stdout.o(.data)
-    JY_DAM_A2_RESP                           0x20000604   Data          64  main.o(.bss)
-    gpi_filter                               0x20000644   Data          64  main.o(.bss)
-    atbuf                                    0x20000684   Data         256  attcp.o(.bss)
-    SSIZE                                    0x20000784   Data          16  w5500.o(.bss)
-    RSIZE                                    0x20000794   Data          16  w5500.o(.bss)
-    DHCP_GET                                 0x200007a4   Data          22  w5500_conf.o(.bss)
-    ConfigMsg                                0x200007ba   Data          80  w5500_conf.o(.bss)
-    RecvMsg                                  0x2000080a   Data          80  w5500_conf.o(.bss)
-    EEPROM_MSG                               0x2000085a   Data          18  w5500_conf.o(.bss)
-    buf                                      0x2000086c   Data        1024  fw_update.o(.bss)
-    secsbuf                                  0x20000c6c   Data         256  secstcp.o(.bss)
-    usercmd_packets_list                     0x20000d6c   Data        1056  queue.o(.bss)
-    eth_rx_packets_list                      0x2000118c   Data        1056  queue.o(.bss)
-    sio_rx_buf                               0x200015ac   Data         130  sio.o(.bss)
-    secs_rx_buf                              0x2000162e   Data         130  sio.o(.bss)
-    rs232_rx_buf_console                     0x200016b0   Data         130  sio.o(.bss)
-    gpio_event_list                          0x20001734   Data         288  gp_io.o(.bss)
-    lf_event_list                            0x20001854   Data         160  gp_io.o(.bss)
-    __initial_sp                             0x20001cf8   Data           0  startup_gd32f10x_hd.o(STACK)
+    __stdout                                 0x200005f8   Data           4  stdout.o(.data)
+    JY_DAM_A2_RESP                           0x200005fc   Data          64  main.o(.bss)
+    gpi_filter                               0x2000063c   Data          64  main.o(.bss)
+    atbuf                                    0x2000067c   Data         256  attcp.o(.bss)
+    SSIZE                                    0x2000077c   Data          16  w5500.o(.bss)
+    RSIZE                                    0x2000078c   Data          16  w5500.o(.bss)
+    DHCP_GET                                 0x2000079c   Data          22  w5500_conf.o(.bss)
+    ConfigMsg                                0x200007b2   Data          80  w5500_conf.o(.bss)
+    RecvMsg                                  0x20000802   Data          80  w5500_conf.o(.bss)
+    EEPROM_MSG                               0x20000852   Data          18  w5500_conf.o(.bss)
+    buf                                      0x20000864   Data        1024  fw_update.o(.bss)
+    secsbuf                                  0x20000c64   Data         256  secstcp.o(.bss)
+    usercmd_packets_list                     0x20000d64   Data        1056  queue.o(.bss)
+    eth_rx_packets_list                      0x20001184   Data        1056  queue.o(.bss)
+    sio_rx_buf                               0x200015a4   Data         130  sio.o(.bss)
+    secs_rx_buf                              0x20001626   Data         130  sio.o(.bss)
+    rs232_rx_buf_console                     0x200016a8   Data         130  sio.o(.bss)
+    gpio_event_list                          0x2000172c   Data         288  gp_io.o(.bss)
+    lf_event_list                            0x2000184c   Data         160  gp_io.o(.bss)
+    __initial_sp                             0x20001cf0   Data           0  startup_gd32f10x_hd.o(STACK)
 
 
 
@@ -3033,52 +3028,52 @@ Memory Map of the image
 
   Image Entry point : 0x08010131
 
-  Load Region LR_IROM1 (Base: 0x08010000, Size: 0x00007120, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x00006f88])
+  Load Region LR_IROM1 (Base: 0x08010000, Size: 0x000070ec, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x00006f5c])
 
-    Execution Region ER_IROM1 (Exec base: 0x08010000, Load base: 0x08010000, Size: 0x00006b1c, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08010000, Load base: 0x08010000, Size: 0x00006af0, Max: 0x00080000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08010000   0x08010000   0x00000130   Data   RO         4271    RESET               startup_gd32f10x_hd.o
-    0x08010130   0x08010130   0x00000000   Code   RO         6074  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08010130   0x08010130   0x00000004   Code   RO         6378    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08010134   0x08010134   0x00000004   Code   RO         6381    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08010138   0x08010138   0x00000000   Code   RO         6383    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08010138   0x08010138   0x00000000   Code   RO         6385    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08010138   0x08010138   0x00000008   Code   RO         6386    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08010140   0x08010140   0x00000004   Code   RO         6393    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
-    0x08010144   0x08010144   0x00000000   Code   RO         6388    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
-    0x08010144   0x08010144   0x00000000   Code   RO         6390    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
-    0x08010144   0x08010144   0x00000004   Code   RO         6379    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x08010148   0x08010148   0x00000024   Code   RO         4272    .text               startup_gd32f10x_hd.o
-    0x0801016c   0x0801016c   0x00000024   Code   RO         6077    .text               mc_w.l(memcpya.o)
-    0x08010190   0x08010190   0x00000024   Code   RO         6079    .text               mc_w.l(memseta.o)
-    0x080101b4   0x080101b4   0x00000018   Code   RO         6083    .text               mc_w.l(strncpy.o)
-    0x080101cc   0x080101cc   0x0000000e   Code   RO         6085    .text               mc_w.l(strlen.o)
-    0x080101da   0x080101da   0x00000064   Code   RO         6360    .text               mf_w.l(fmul.o)
-    0x0801023e   0x0801023e   0x0000007c   Code   RO         6362    .text               mf_w.l(fdiv.o)
-    0x080102ba   0x080102ba   0x0000014e   Code   RO         6364    .text               mf_w.l(dadd.o)
-    0x08010408   0x08010408   0x000000e4   Code   RO         6366    .text               mf_w.l(dmul.o)
-    0x080104ec   0x080104ec   0x000000de   Code   RO         6368    .text               mf_w.l(ddiv.o)
-    0x080105ca   0x080105ca   0x0000000a   Code   RO         6370    .text               mf_w.l(ffltui.o)
-    0x080105d4   0x080105d4   0x00000032   Code   RO         6372    .text               mf_w.l(ffixi.o)
-    0x08010606   0x08010606   0x00000026   Code   RO         6374    .text               mf_w.l(f2d.o)
-    0x0801062c   0x0801062c   0x00000038   Code   RO         6376    .text               mf_w.l(d2f.o)
-    0x08010664   0x08010664   0x0000002c   Code   RO         6395    .text               mc_w.l(uidiv.o)
-    0x08010690   0x08010690   0x00000062   Code   RO         6397    .text               mc_w.l(uldiv.o)
-    0x080106f2   0x080106f2   0x0000001e   Code   RO         6399    .text               mc_w.l(llshl.o)
-    0x08010710   0x08010710   0x00000024   Code   RO         6401    .text               mc_w.l(llsshr.o)
-    0x08010734   0x08010734   0x00000000   Code   RO         6403    .text               mc_w.l(iusefp.o)
-    0x08010734   0x08010734   0x0000006e   Code   RO         6404    .text               mf_w.l(fepilogue.o)
-    0x080107a2   0x080107a2   0x000000ba   Code   RO         6406    .text               mf_w.l(depilogue.o)
-    0x0801085c   0x0801085c   0x00000030   Code   RO         6408    .text               mf_w.l(dfixul.o)
-    0x0801088c   0x0801088c   0x00000030   Code   RO         6410    .text               mf_w.l(cdrcmple.o)
-    0x080108bc   0x080108bc   0x00000024   Code   RO         6412    .text               mc_w.l(init.o)
-    0x080108e0   0x080108e0   0x00000020   Code   RO         6414    .text               mc_w.l(llushr.o)
-    0x08010900   0x08010900   0x00000056   Code   RO         6424    .text               mc_w.l(__dczerorl2.o)
+    0x08010000   0x08010000   0x00000130   Data   RO         4275    RESET               startup_gd32f10x_hd.o
+    0x08010130   0x08010130   0x00000000   Code   RO         6066  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08010130   0x08010130   0x00000004   Code   RO         6370    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08010134   0x08010134   0x00000004   Code   RO         6373    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08010138   0x08010138   0x00000000   Code   RO         6375    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08010138   0x08010138   0x00000000   Code   RO         6377    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08010138   0x08010138   0x00000008   Code   RO         6378    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08010140   0x08010140   0x00000004   Code   RO         6385    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x08010144   0x08010144   0x00000000   Code   RO         6380    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x08010144   0x08010144   0x00000000   Code   RO         6382    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x08010144   0x08010144   0x00000004   Code   RO         6371    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08010148   0x08010148   0x00000024   Code   RO         4276    .text               startup_gd32f10x_hd.o
+    0x0801016c   0x0801016c   0x00000024   Code   RO         6069    .text               mc_w.l(memcpya.o)
+    0x08010190   0x08010190   0x00000024   Code   RO         6071    .text               mc_w.l(memseta.o)
+    0x080101b4   0x080101b4   0x00000018   Code   RO         6075    .text               mc_w.l(strncpy.o)
+    0x080101cc   0x080101cc   0x0000000e   Code   RO         6077    .text               mc_w.l(strlen.o)
+    0x080101da   0x080101da   0x00000064   Code   RO         6352    .text               mf_w.l(fmul.o)
+    0x0801023e   0x0801023e   0x0000007c   Code   RO         6354    .text               mf_w.l(fdiv.o)
+    0x080102ba   0x080102ba   0x0000014e   Code   RO         6356    .text               mf_w.l(dadd.o)
+    0x08010408   0x08010408   0x000000e4   Code   RO         6358    .text               mf_w.l(dmul.o)
+    0x080104ec   0x080104ec   0x000000de   Code   RO         6360    .text               mf_w.l(ddiv.o)
+    0x080105ca   0x080105ca   0x0000000a   Code   RO         6362    .text               mf_w.l(ffltui.o)
+    0x080105d4   0x080105d4   0x00000032   Code   RO         6364    .text               mf_w.l(ffixi.o)
+    0x08010606   0x08010606   0x00000026   Code   RO         6366    .text               mf_w.l(f2d.o)
+    0x0801062c   0x0801062c   0x00000038   Code   RO         6368    .text               mf_w.l(d2f.o)
+    0x08010664   0x08010664   0x0000002c   Code   RO         6387    .text               mc_w.l(uidiv.o)
+    0x08010690   0x08010690   0x00000062   Code   RO         6389    .text               mc_w.l(uldiv.o)
+    0x080106f2   0x080106f2   0x0000001e   Code   RO         6391    .text               mc_w.l(llshl.o)
+    0x08010710   0x08010710   0x00000024   Code   RO         6393    .text               mc_w.l(llsshr.o)
+    0x08010734   0x08010734   0x00000000   Code   RO         6395    .text               mc_w.l(iusefp.o)
+    0x08010734   0x08010734   0x0000006e   Code   RO         6396    .text               mf_w.l(fepilogue.o)
+    0x080107a2   0x080107a2   0x000000ba   Code   RO         6398    .text               mf_w.l(depilogue.o)
+    0x0801085c   0x0801085c   0x00000030   Code   RO         6400    .text               mf_w.l(dfixul.o)
+    0x0801088c   0x0801088c   0x00000030   Code   RO         6402    .text               mf_w.l(cdrcmple.o)
+    0x080108bc   0x080108bc   0x00000024   Code   RO         6404    .text               mc_w.l(init.o)
+    0x080108e0   0x080108e0   0x00000020   Code   RO         6406    .text               mc_w.l(llushr.o)
+    0x08010900   0x08010900   0x00000056   Code   RO         6416    .text               mc_w.l(__dczerorl2.o)
     0x08010956   0x08010956   0x00000004   Code   RO            3    i.BusFault_Handler  gd32f10x_it.o
     0x0801095a   0x0801095a   0x00000002   PAD
-    0x0801095c   0x0801095c   0x00000034   Code   RO         5628    i.Cal_Crc16_xmodem  crc16_xmodem.o
+    0x0801095c   0x0801095c   0x00000034   Code   RO         5620    i.Cal_Crc16_xmodem  crc16_xmodem.o
     0x08010990   0x08010990   0x00000004   Code   RO            4    i.DebugMon_Handler  gd32f10x_it.o
     0x08010994   0x08010994   0x00000024   Code   RO            5    i.EXTI0_IRQHandler  gd32f10x_it.o
     0x080109b8   0x080109b8   0x00000024   Code   RO            6    i.EXTI1_IRQHandler  gd32f10x_it.o
@@ -3086,295 +3081,295 @@ Memory Map of the image
     0x08010a00   0x08010a00   0x00000024   Code   RO            8    i.EXTI3_IRQHandler  gd32f10x_it.o
     0x08010a24   0x08010a24   0x00000028   Code   RO            9    i.EXTI4_IRQHandler  gd32f10x_it.o
     0x08010a4c   0x08010a4c   0x0000007c   Code   RO           10    i.EXTI5_9_IRQHandler  gd32f10x_it.o
-    0x08010ac8   0x08010ac8   0x00000018   Code   RO         4865    i.FLASH_PagesMask   w5500_conf.o
-    0x08010ae0   0x08010ae0   0x00000098   Code   RO         4866    i.Get_UUID          w5500_conf.o
+    0x08010ac8   0x08010ac8   0x00000018   Code   RO         4857    i.FLASH_PagesMask   w5500_conf.o
+    0x08010ae0   0x08010ae0   0x00000098   Code   RO         4858    i.Get_UUID          w5500_conf.o
     0x08010b78   0x08010b78   0x00000004   Code   RO           11    i.HardFault_Handler  gd32f10x_it.o
-    0x08010b7c   0x08010b7c   0x00000040   Code   RO         5949    i.IIC_Ack           i2c_io.o
-    0x08010bbc   0x08010bbc   0x00000040   Code   RO         5950    i.IIC_NAck          i2c_io.o
-    0x08010bfc   0x08010bfc   0x0000005c   Code   RO         5951    i.IIC_Read_Byte     i2c_io.o
-    0x08010c58   0x08010c58   0x00000064   Code   RO         5952    i.IIC_Send_Byte     i2c_io.o
-    0x08010cbc   0x08010cbc   0x00000038   Code   RO         5953    i.IIC_Start         i2c_io.o
-    0x08010cf4   0x08010cf4   0x00000038   Code   RO         5954    i.IIC_Stop          i2c_io.o
-    0x08010d2c   0x08010d2c   0x00000054   Code   RO         5955    i.IIC_Wait_Ack      i2c_io.o
-    0x08010d80   0x08010d80   0x00000032   Code   RO         4867    i.IINCHIP_READ      w5500_conf.o
-    0x08010db2   0x08010db2   0x0000000c   Code   RO         4868    i.IINCHIP_SpiSendData  w5500_conf.o
-    0x08010dbe   0x08010dbe   0x00000032   Code   RO         4869    i.IINCHIP_WRITE     w5500_conf.o
-    0x08010df0   0x08010df0   0x00000070   Code   RO         5793    i.Init_MAX7219      max7219.o
-    0x08010e60   0x08010e60   0x0000005c   Code   RO          285    i.IsDeviceValid     main.o
-    0x08010ebc   0x08010ebc   0x0000005c   Code   RO         5796    i.Max7219_GPIOConfig  max7219.o
-    0x08010f18   0x08010f18   0x00000010   Code   RO         5797    i.Max7219_pinCLK_HIGH  max7219.o
-    0x08010f28   0x08010f28   0x00000010   Code   RO         5798    i.Max7219_pinCLK_LOW  max7219.o
-    0x08010f38   0x08010f38   0x00000014   Code   RO         5799    i.Max7219_pinCS_HIGH  max7219.o
-    0x08010f4c   0x08010f4c   0x00000014   Code   RO         5800    i.Max7219_pinCS_LOW  max7219.o
-    0x08010f60   0x08010f60   0x00000010   Code   RO         5801    i.Max7219_pinDIN_HIGH  max7219.o
-    0x08010f70   0x08010f70   0x00000010   Code   RO         5802    i.Max7219_pinDIN_LOW  max7219.o
-    0x08010f80   0x08010f80   0x00000028   Code   RO         5803    i.Max7219_power_init  max7219.o
+    0x08010b7c   0x08010b7c   0x00000040   Code   RO         5941    i.IIC_Ack           i2c_io.o
+    0x08010bbc   0x08010bbc   0x00000040   Code   RO         5942    i.IIC_NAck          i2c_io.o
+    0x08010bfc   0x08010bfc   0x0000005c   Code   RO         5943    i.IIC_Read_Byte     i2c_io.o
+    0x08010c58   0x08010c58   0x00000064   Code   RO         5944    i.IIC_Send_Byte     i2c_io.o
+    0x08010cbc   0x08010cbc   0x00000038   Code   RO         5945    i.IIC_Start         i2c_io.o
+    0x08010cf4   0x08010cf4   0x00000038   Code   RO         5946    i.IIC_Stop          i2c_io.o
+    0x08010d2c   0x08010d2c   0x00000054   Code   RO         5947    i.IIC_Wait_Ack      i2c_io.o
+    0x08010d80   0x08010d80   0x00000032   Code   RO         4859    i.IINCHIP_READ      w5500_conf.o
+    0x08010db2   0x08010db2   0x0000000c   Code   RO         4860    i.IINCHIP_SpiSendData  w5500_conf.o
+    0x08010dbe   0x08010dbe   0x00000032   Code   RO         4861    i.IINCHIP_WRITE     w5500_conf.o
+    0x08010df0   0x08010df0   0x00000070   Code   RO         5785    i.Init_MAX7219      max7219.o
+    0x08010e60   0x08010e60   0x0000005c   Code   RO          289    i.IsDeviceValid     main.o
+    0x08010ebc   0x08010ebc   0x0000005c   Code   RO         5788    i.Max7219_GPIOConfig  max7219.o
+    0x08010f18   0x08010f18   0x00000010   Code   RO         5789    i.Max7219_pinCLK_HIGH  max7219.o
+    0x08010f28   0x08010f28   0x00000010   Code   RO         5790    i.Max7219_pinCLK_LOW  max7219.o
+    0x08010f38   0x08010f38   0x00000014   Code   RO         5791    i.Max7219_pinCS_HIGH  max7219.o
+    0x08010f4c   0x08010f4c   0x00000014   Code   RO         5792    i.Max7219_pinCS_LOW  max7219.o
+    0x08010f60   0x08010f60   0x00000010   Code   RO         5793    i.Max7219_pinDIN_HIGH  max7219.o
+    0x08010f70   0x08010f70   0x00000010   Code   RO         5794    i.Max7219_pinDIN_LOW  max7219.o
+    0x08010f80   0x08010f80   0x00000028   Code   RO         5795    i.Max7219_power_init  max7219.o
     0x08010fa8   0x08010fa8   0x00000004   Code   RO           12    i.MemManage_Handler  gd32f10x_it.o
     0x08010fac   0x08010fac   0x00000004   Code   RO           13    i.NMI_Handler       gd32f10x_it.o
-    0x08010fb0   0x08010fb0   0x00000028   Code   RO          230    i.NVIC_SetPriority  systick.o
-    0x08010fd8   0x08010fd8   0x0000001c   Code   RO          286    i.NetworkToFloat    main.o
+    0x08010fb0   0x08010fb0   0x00000028   Code   RO          234    i.NVIC_SetPriority  systick.o
+    0x08010fd8   0x08010fd8   0x0000001c   Code   RO          290    i.NetworkToFloat    main.o
     0x08010ff4   0x08010ff4   0x00000004   Code   RO           14    i.PendSV_Handler    gd32f10x_it.o
     0x08010ff8   0x08010ff8   0x00000044   Code   RO           15    i.RTC_IRQHandler    gd32f10x_it.o
-    0x0801103c   0x0801103c   0x0000011c   Code   RO         6038    i.ReadSht20         sht2x.o
-    0x08011158   0x08011158   0x0000001c   Code   RO         5956    i.SDA_IN            i2c_io.o
-    0x08011174   0x08011174   0x00000014   Code   RO         5957    i.SDA_OUT           i2c_io.o
-    0x08011188   0x08011188   0x00000050   Code   RO         5958    i.SHT21_Init        i2c_io.o
-    0x080111d8   0x080111d8   0x0000000e   Code   RO         6039    i.SHT21_ReadHumidity  sht2x.o
-    0x080111e6   0x080111e6   0x0000000e   Code   RO         6040    i.SHT21_ReadTemp    sht2x.o
-    0x080111f4   0x080111f4   0x00000080   Code   RO         5245    i.SPI_Eth_Init      bsp_spi_eth.o
-    0x08011274   0x08011274   0x00000058   Code   RO         5247    i.SPI_Eth_SendByte  bsp_spi_eth.o
+    0x0801103c   0x0801103c   0x0000011c   Code   RO         6030    i.ReadSht20         sht2x.o
+    0x08011158   0x08011158   0x0000001c   Code   RO         5948    i.SDA_IN            i2c_io.o
+    0x08011174   0x08011174   0x00000014   Code   RO         5949    i.SDA_OUT           i2c_io.o
+    0x08011188   0x08011188   0x00000050   Code   RO         5950    i.SHT21_Init        i2c_io.o
+    0x080111d8   0x080111d8   0x0000000e   Code   RO         6031    i.SHT21_ReadHumidity  sht2x.o
+    0x080111e6   0x080111e6   0x0000000e   Code   RO         6032    i.SHT21_ReadTemp    sht2x.o
+    0x080111f4   0x080111f4   0x00000080   Code   RO         5237    i.SPI_Eth_Init      bsp_spi_eth.o
+    0x08011274   0x08011274   0x00000058   Code   RO         5239    i.SPI_Eth_SendByte  bsp_spi_eth.o
     0x080112cc   0x080112cc   0x00000004   Code   RO           16    i.SVC_Handler       gd32f10x_it.o
     0x080112d0   0x080112d0   0x0000000c   Code   RO           17    i.SysTick_Handler   gd32f10x_it.o
-    0x080112dc   0x080112dc   0x000000d4   Code   RO          604    i.SystemInit        system_gd32f10x.o
-    0x080113b0   0x080113b0   0x00000064   Code   RO          287    i.TIM4_Configuration  main.o
+    0x080112dc   0x080112dc   0x000000d4   Code   RO          608    i.SystemInit        system_gd32f10x.o
+    0x080113b0   0x080113b0   0x00000064   Code   RO          291    i.TIM4_Configuration  main.o
     0x08011414   0x08011414   0x00000020   Code   RO           18    i.TIMER4_IRQHandler  gd32f10x_it.o
-    0x08011434   0x08011434   0x000000dc   Code   RO          288    i.USART0_IRQHandler  main.o
-    0x08011510   0x08011510   0x00000070   Code   RO          289    i.USART1_IRQHandler  main.o
-    0x08011580   0x08011580   0x00000070   Code   RO         5659    i.USART2_IRQHandler  rs485.o
+    0x08011434   0x08011434   0x000000dc   Code   RO          292    i.USART0_IRQHandler  main.o
+    0x08011510   0x08011510   0x00000070   Code   RO          293    i.USART1_IRQHandler  main.o
+    0x08011580   0x08011580   0x00000070   Code   RO         5651    i.USART2_IRQHandler  rs485.o
     0x080115f0   0x080115f0   0x00000004   Code   RO           19    i.UsageFault_Handler  gd32f10x_it.o
-    0x080115f4   0x080115f4   0x00000028   Code   RO         5805    i.Write_Max7219     max7219.o
-    0x0801161c   0x0801161c   0x0000003e   Code   RO         5806    i.Write_Max7219_byte  max7219.o
+    0x080115f4   0x080115f4   0x00000028   Code   RO         5797    i.Write_Max7219     max7219.o
+    0x0801161c   0x0801161c   0x0000003e   Code   RO         5798    i.Write_Max7219_byte  max7219.o
     0x0801165a   0x0801165a   0x00000002   PAD
-    0x0801165c   0x0801165c   0x000000b8   Code   RO          290    i._Debug2           main.o
-    0x08011714   0x08011714   0x00000114   Code   RO         4871    i._Get_UUID         w5500_conf.o
-    0x08011828   0x08011828   0x00000020   Code   RO         6332    i.__0printf         mc_w.l(printfa.o)
-    0x08011848   0x08011848   0x00000028   Code   RO         6334    i.__0sprintf        mc_w.l(printfa.o)
-    0x08011870   0x08011870   0x00000024   Code   RO         6338    i.__0vsprintf       mc_w.l(printfa.o)
-    0x08011894   0x08011894   0x0000000e   Code   RO         6418    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080118a2   0x080118a2   0x00000002   Code   RO         6419    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080118a4   0x080118a4   0x0000000e   Code   RO         6420    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080118b2   0x080118b2   0x00000002   PAD
-    0x080118b4   0x080118b4   0x00000184   Code   RO         6339    i._fp_digits        mc_w.l(printfa.o)
-    0x08011a38   0x08011a38   0x000006b4   Code   RO         6340    i._printf_core      mc_w.l(printfa.o)
-    0x080120ec   0x080120ec   0x00000024   Code   RO         6341    i._printf_post_padding  mc_w.l(printfa.o)
-    0x08012110   0x08012110   0x0000002e   Code   RO         6342    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x0801213e   0x0801213e   0x0000000a   Code   RO         6344    i._sputc            mc_w.l(printfa.o)
-    0x08012148   0x08012148   0x00000026   Code   RO          291    i.amkor_nc01_crc    main.o
-    0x0801216e   0x0801216e   0x00000002   PAD
-    0x08012170   0x08012170   0x00000134   Code   RO          292    i.before_amkor_nc01_filter  main.o
-    0x080122a4   0x080122a4   0x00000140   Code   RO          293    i.before_amkor_nc01_rs232_filter  main.o
-    0x080123e4   0x080123e4   0x00000688   Code   RO          295    i.before_secs_filter  main.o
-    0x08012a6c   0x08012a6c   0x00000030   Code   RO          296    i.checkSecsLinkOk   main.o
-    0x08012a9c   0x08012a9c   0x00000034   Code   RO         4569    i.close             socket.o
-    0x08012ad0   0x08012ad0   0x00000020   Code   RO         4451    i.close_atsocket    attcp.o
-    0x08012af0   0x08012af0   0x0000005c   Code   RO         5660    i.confit_rs485      rs485.o
-    0x08012b4c   0x08012b4c   0x00000014   Code   RO          231    i.delay_1ms         systick.o
-    0x08012b60   0x08012b60   0x00000018   Code   RO          232    i.delay_decrement   systick.o
-    0x08012b78   0x08012b78   0x0000000c   Code   RO         4283    i.delay_ms          utility.o
-    0x08012b84   0x08012b84   0x00000030   Code   RO         4285    i.delay_us          utility.o
-    0x08012bb4   0x08012bb4   0x00000026   Code   RO         4571    i.disconnect        socket.o
-    0x08012bda   0x08012bda   0x00000002   PAD
-    0x08012bdc   0x08012bdc   0x00000144   Code   RO         4452    i.do_attcp_cmd      attcp.o
-    0x08012d20   0x08012d20   0x000001e0   Code   RO         5082    i.do_fw_update      fw_update.o
-    0x08012f00   0x08012f00   0x0000014c   Code   RO         5108    i.do_secstcp_cmd    secstcp.o
-    0x0801304c   0x0801304c   0x000004dc   Code   RO         4645    i.do_udp_config     udp_config.o
-    0x08013528   0x08013528   0x00000058   Code   RO         5145    i.eth_rx_enque      queue.o
-    0x08013580   0x08013580   0x000000bc   Code   RO         1853    i.exti_init         gd32f10x_exti.o
-    0x0801363c   0x0801363c   0x00000010   Code   RO         1855    i.exti_interrupt_enable  gd32f10x_exti.o
-    0x0801364c   0x0801364c   0x0000000c   Code   RO         1856    i.exti_interrupt_flag_clear  gd32f10x_exti.o
-    0x08013658   0x08013658   0x00000018   Code   RO         1857    i.exti_interrupt_flag_get  gd32f10x_exti.o
-    0x08013670   0x08013670   0x00000022   Code   RO         1939    i.fmc_bank0_ready_wait  gd32f10x_fmc.o
-    0x08013692   0x08013692   0x00000002   PAD
-    0x08013694   0x08013694   0x00000030   Code   RO         1940    i.fmc_bank0_state_get  gd32f10x_fmc.o
-    0x080136c4   0x080136c4   0x00000022   Code   RO         1944    i.fmc_bank1_ready_wait  gd32f10x_fmc.o
-    0x080136e6   0x080136e6   0x00000002   PAD
-    0x080136e8   0x080136e8   0x00000030   Code   RO         1945    i.fmc_bank1_state_get  gd32f10x_fmc.o
-    0x08013718   0x08013718   0x00000020   Code   RO         1947    i.fmc_flag_clear    gd32f10x_fmc.o
-    0x08013738   0x08013738   0x0000002c   Code   RO         1954    i.fmc_lock          gd32f10x_fmc.o
-    0x08013764   0x08013764   0x000000f8   Code   RO         1956    i.fmc_page_erase    gd32f10x_fmc.o
-    0x0801385c   0x0801385c   0x00000044   Code   RO         1957    i.fmc_unlock        gd32f10x_fmc.o
-    0x080138a0   0x080138a0   0x000000c0   Code   RO         1958    i.fmc_word_program  gd32f10x_fmc.o
-    0x08013960   0x08013960   0x00000024   Code   RO          298    i.fputc             main.o
-    0x08013984   0x08013984   0x000000ec   Code   RO         5277    i.gd_eval_com_init  board.o
-    0x08013a70   0x08013a70   0x00000034   Code   RO         5630    i.generate_crc16    crc16_xmodem.o
-    0x08013aa4   0x08013aa4   0x00000010   Code   RO         4669    i.getGAR            w5500.o
-    0x08013ab4   0x08013ab4   0x00000010   Code   RO         4671    i.getIINCHIP_TxMAX  w5500.o
-    0x08013ac4   0x08013ac4   0x00000012   Code   RO         4675    i.getSIPR           w5500.o
-    0x08013ad6   0x08013ad6   0x00000012   Code   RO         4676    i.getSUBR           w5500.o
-    0x08013ae8   0x08013ae8   0x00000012   Code   RO         4677    i.getSn_IR          w5500.o
-    0x08013afa   0x08013afa   0x00000054   Code   RO         4678    i.getSn_RX_RSR      w5500.o
-    0x08013b4e   0x08013b4e   0x00000012   Code   RO         4679    i.getSn_SR          w5500.o
-    0x08013b60   0x08013b60   0x00000054   Code   RO         4680    i.getSn_TX_FSR      w5500.o
-    0x08013bb4   0x08013bb4   0x00000054   Code   RO         4874    i.get_config        w5500_conf.o
-    0x08013c08   0x08013c08   0x0000002c   Code   RO         5711    i.gio_event_deque   gp_io.o
-    0x08013c34   0x08013c34   0x000000ac   Code   RO         5714    i.gp_get_in         gp_io.o
-    0x08013ce0   0x08013ce0   0x00000270   Code   RO         5716    i.gp_io_init        gp_io.o
-    0x08013f50   0x08013f50   0x00000114   Code   RO         5717    i.gp_set_out        gp_io.o
-    0x08014064   0x08014064   0x00000004   Code   RO         2221    i.gpio_bit_reset    gd32f10x_gpio.o
-    0x08014068   0x08014068   0x00000004   Code   RO         2222    i.gpio_bit_set      gd32f10x_gpio.o
-    0x0801406c   0x0801406c   0x0000000a   Code   RO         2223    i.gpio_bit_write    gd32f10x_gpio.o
-    0x08014076   0x08014076   0x00000002   PAD
-    0x08014078   0x08014078   0x00000098   Code   RO         2228    i.gpio_exti_source_select  gd32f10x_gpio.o
-    0x08014110   0x08014110   0x00000044   Code   RO         4876    i.gpio_for_w5500_config  w5500_conf.o
-    0x08014154   0x08014154   0x000000ac   Code   RO         2229    i.gpio_init         gd32f10x_gpio.o
-    0x08014200   0x08014200   0x00000010   Code   RO         2230    i.gpio_input_bit_get  gd32f10x_gpio.o
-    0x08014210   0x08014210   0x00000090   Code   RO         2235    i.gpio_pin_remap_config  gd32f10x_gpio.o
-    0x080142a0   0x080142a0   0x0000000a   Code   RO         4877    i.iinchip_csoff     w5500_conf.o
-    0x080142aa   0x080142aa   0x0000000a   Code   RO         4878    i.iinchip_cson      w5500_conf.o
-    0x080142b4   0x080142b4   0x00000044   Code   RO         5661    i.init_rs485        rs485.o
-    0x080142f8   0x080142f8   0x00000028   Code   RO         5899    i.keypad_init       keypad.o
-    0x08014320   0x08014320   0x00000024   Code   RO         5523    i.led_init          led.o
-    0x08014344   0x08014344   0x00000028   Code   RO         5524    i.led_off           led.o
-    0x0801436c   0x0801436c   0x00000028   Code   RO         5525    i.led_on            led.o
-    0x08014394   0x08014394   0x000000e8   Code   RO          299    i.led_spark         main.o
-    0x0801447c   0x0801447c   0x00000038   Code   RO         5527    i.led_toggle        led.o
-    0x080144b4   0x080144b4   0x0000003e   Code   RO         4572    i.listen            socket.o
-    0x080144f2   0x080144f2   0x00000002   PAD
-    0x080144f4   0x080144f4   0x0000018c   Code   RO         5901    i.load_nc01_parameters  keypad.o
-    0x08014680   0x08014680   0x0000002c   Code   RO          301    i.magnetic_gate_beep_on  main.o
-    0x080146ac   0x080146ac   0x00000518   Code   RO          303    i.main              main.o
-    0x08014bc4   0x08014bc4   0x00000024   Code   RO          304    i.myputc            main.o
-    0x08014be8   0x08014be8   0x0000001a   Code   RO          305    i.myputstr          main.o
-    0x08014c02   0x08014c02   0x00000002   PAD
-    0x08014c04   0x08014c04   0x00000010   Code   RO         5284    i.nvic_configuration  board.o
-    0x08014c14   0x08014c14   0x000000ac   Code   RO         2543    i.nvic_irq_enable   gd32f10x_misc.o
-    0x08014cc0   0x08014cc0   0x00000014   Code   RO         2544    i.nvic_priority_group_set  gd32f10x_misc.o
-    0x08014cd4   0x08014cd4   0x00000018   Code   RO         2545    i.nvic_vector_table_set  gd32f10x_misc.o
-    0x08014cec   0x08014cec   0x000000f0   Code   RO          306    i.process_com1_com2_test  main.o
-    0x08014ddc   0x08014ddc   0x000000c4   Code   RO          307    i.process_gpi_filter  main.o
-    0x08014ea0   0x08014ea0   0x00000068   Code   RO          308    i.process_rcv_amkor_nc01_cmd  main.o
-    0x08014f08   0x08014f08   0x00000090   Code   RO          309    i.process_rcv_amkor_nc01_rs232_cmd  main.o
-    0x08014f98   0x08014f98   0x00000046   Code   RO          311    i.process_rcv_secs_cmd  main.o
-    0x08014fde   0x08014fde   0x0000002c   Code   RO          312    i.put_test_data_queue  main.o
-    0x0801500a   0x0801500a   0x00000002   PAD
-    0x0801500c   0x0801500c   0x00000014   Code   RO         2687    i.rcu_all_reset_flag_clear  gd32f10x_rcu.o
-    0x08015020   0x08015020   0x00000124   Code   RO         2693    i.rcu_clock_freq_get  gd32f10x_rcu.o
-    0x08015144   0x08015144   0x00000024   Code   RO         2696    i.rcu_flag_get      gd32f10x_rcu.o
-    0x08015168   0x08015168   0x00000020   Code   RO         2710    i.rcu_periph_clock_enable  gd32f10x_rcu.o
-    0x08015188   0x08015188   0x00000020   Code   RO         2713    i.rcu_periph_reset_disable  gd32f10x_rcu.o
-    0x080151a8   0x080151a8   0x00000020   Code   RO         2714    i.rcu_periph_reset_enable  gd32f10x_rcu.o
-    0x080151c8   0x080151c8   0x00000014   Code   RO         4881    i.reboot            w5500_conf.o
-    0x080151dc   0x080151dc   0x00000042   Code   RO         4573    i.recv              socket.o
-    0x0801521e   0x0801521e   0x00000002   PAD
-    0x08015220   0x08015220   0x00000094   Code   RO         4682    i.recv_data_processing  w5500.o
-    0x080152b4   0x080152b4   0x00000200   Code   RO         4574    i.recvfrom          socket.o
-    0x080154b4   0x080154b4   0x00000104   Code   RO         5380    i.report_S2F18      secs.o
-    0x080155b8   0x080155b8   0x000000dc   Code   RO         5381    i.report_S2F22      secs.o
-    0x08015694   0x08015694   0x0000003c   Code   RO          313    i.reset_gpi_filter  main.o
-    0x080156d0   0x080156d0   0x0000002c   Code   RO         4883    i.reset_w5500       w5500_conf.o
-    0x080156fc   0x080156fc   0x00000014   Code   RO         2919    i.rtc_configuration_mode_enter  gd32f10x_rtc.o
-    0x08015710   0x08015710   0x00000014   Code   RO         2920    i.rtc_configuration_mode_exit  gd32f10x_rtc.o
-    0x08015724   0x08015724   0x00000014   Code   RO         2921    i.rtc_counter_get   gd32f10x_rtc.o
-    0x08015738   0x08015738   0x00000020   Code   RO         2922    i.rtc_counter_set   gd32f10x_rtc.o
-    0x08015758   0x08015758   0x00000010   Code   RO         2924    i.rtc_flag_clear    gd32f10x_rtc.o
-    0x08015768   0x08015768   0x00000018   Code   RO         2925    i.rtc_flag_get      gd32f10x_rtc.o
-    0x08015780   0x08015780   0x00000014   Code   RO         2930    i.rtc_lwoff_wait    gd32f10x_rtc.o
-    0x08015794   0x08015794   0x00000038   Code   RO         5199    i.secs_post_received_data  sio.o
-    0x080157cc   0x080157cc   0x000000ec   Code   RO         4575    i.send              socket.o
-    0x080158b8   0x080158b8   0x00000094   Code   RO         4683    i.send_data_processing  w5500.o
-    0x0801594c   0x0801594c   0x0000003c   Code   RO         5109    i.send_secs_socket  secstcp.o
-    0x08015988   0x08015988   0x0000003c   Code   RO         4453    i.send_tcp_socket   attcp.o
-    0x080159c4   0x080159c4   0x0000010c   Code   RO         4576    i.sendto            socket.o
-    0x08015ad0   0x08015ad0   0x00000010   Code   RO         4684    i.setGAR            w5500.o
-    0x08015ae0   0x08015ae0   0x00000010   Code   RO         4686    i.setRCR            w5500.o
-    0x08015af0   0x08015af0   0x0000001a   Code   RO         4687    i.setRTR            w5500.o
-    0x08015b0a   0x08015b0a   0x00000012   Code   RO         4688    i.setSHAR           w5500.o
-    0x08015b1c   0x08015b1c   0x00000012   Code   RO         4689    i.setSIPR           w5500.o
-    0x08015b2e   0x08015b2e   0x00000012   Code   RO         4690    i.setSUBR           w5500.o
-    0x08015b40   0x08015b40   0x00000016   Code   RO         4691    i.setSn_IR          w5500.o
-    0x08015b56   0x08015b56   0x00000002   PAD
-    0x08015b58   0x08015b58   0x000000a8   Code   RO         4884    i.set_default       w5500_conf.o
-    0x08015c00   0x08015c00   0x00000110   Code   RO         4885    i.set_network       w5500_conf.o
-    0x08015d10   0x08015d10   0x00000010   Code   RO         5200    i.sio_byte_buf_enqueue  sio.o
-    0x08015d20   0x08015d20   0x0000000e   Code   RO         5201    i.sio_byte_buf_flush  sio.o
-    0x08015d2e   0x08015d2e   0x00000002   PAD
-    0x08015d30   0x08015d30   0x00000038   Code   RO         5202    i.sio_post_received_data  sio.o
-    0x08015d68   0x08015d68   0x000000c4   Code   RO         4577    i.socket            socket.o
-    0x08015e2c   0x08015e2c   0x00000088   Code   RO         4694    i.socket_buf_init   w5500.o
-    0x08015eb4   0x08015eb4   0x0000000c   Code   RO         3323    i.spi_crc_polynomial_set  gd32f10x_spi.o
-    0x08015ec0   0x08015ec0   0x0000000a   Code   RO         3327    i.spi_enable        gd32f10x_spi.o
-    0x08015eca   0x08015eca   0x00000008   Code   RO         3329    i.spi_i2s_data_receive  gd32f10x_spi.o
-    0x08015ed2   0x08015ed2   0x00000004   Code   RO         3330    i.spi_i2s_data_transmit  gd32f10x_spi.o
-    0x08015ed6   0x08015ed6   0x00000010   Code   RO         3332    i.spi_i2s_flag_get  gd32f10x_spi.o
-    0x08015ee6   0x08015ee6   0x00000032   Code   RO         3336    i.spi_init          gd32f10x_spi.o
-    0x08015f18   0x08015f18   0x00000010   Code   RO          316    i.start_TIM4        main.o
-    0x08015f28   0x08015f28   0x00000010   Code   RO          317    i.stop_TIM4         main.o
-    0x08015f38   0x08015f38   0x0000014c   Code   RO          318    i.switchLEDmode     main.o
-    0x08016084   0x08016084   0x000000c4   Code   RO          605    i.system_clock_108m_hxtal  system_gd32f10x.o
-    0x08016148   0x08016148   0x00000008   Code   RO          606    i.system_clock_config  system_gd32f10x.o
-    0x08016150   0x08016150   0x00000050   Code   RO          233    i.systick_config    systick.o
-    0x080161a0   0x080161a0   0x000000f4   Code   RO          319    i.timer4_isr        main.o
-    0x08016294   0x08016294   0x000000dc   Code   RO         3540    i.timer_deinit      gd32f10x_timer.o
-    0x08016370   0x08016370   0x0000000a   Code   RO         3541    i.timer_disable     gd32f10x_timer.o
-    0x0801637a   0x0801637a   0x0000000a   Code   RO         3545    i.timer_enable      gd32f10x_timer.o
-    0x08016384   0x08016384   0x000000e0   Code   RO         3555    i.timer_init        gd32f10x_timer.o
-    0x08016464   0x08016464   0x00000008   Code   RO         3562    i.timer_interrupt_enable  gd32f10x_timer.o
-    0x0801646c   0x0801646c   0x00000006   Code   RO         3563    i.timer_interrupt_flag_clear  gd32f10x_timer.o
-    0x08016472   0x08016472   0x00000018   Code   RO         3564    i.timer_interrupt_flag_get  gd32f10x_timer.o
-    0x0801648a   0x0801648a   0x00000002   PAD
-    0x0801648c   0x0801648c   0x00000090   Code   RO         3941    i.usart_baudrate_set  gd32f10x_usart.o
-    0x0801651c   0x0801651c   0x0000000a   Code   RO         3942    i.usart_data_receive  gd32f10x_usart.o
-    0x08016526   0x08016526   0x00000008   Code   RO         3943    i.usart_data_transmit  gd32f10x_usart.o
-    0x0801652e   0x0801652e   0x00000002   PAD
-    0x08016530   0x08016530   0x00000090   Code   RO         3944    i.usart_deinit      gd32f10x_usart.o
-    0x080165c0   0x080165c0   0x0000000a   Code   RO         3948    i.usart_enable      gd32f10x_usart.o
-    0x080165ca   0x080165ca   0x0000001e   Code   RO         3950    i.usart_flag_get    gd32f10x_usart.o
-    0x080165e8   0x080165e8   0x00000014   Code   RO         3954    i.usart_hardware_flow_cts_config  gd32f10x_usart.o
-    0x080165fc   0x080165fc   0x00000014   Code   RO         3955    i.usart_hardware_flow_rts_config  gd32f10x_usart.o
-    0x08016610   0x08016610   0x0000001a   Code   RO         3957    i.usart_interrupt_enable  gd32f10x_usart.o
-    0x0801662a   0x0801662a   0x00000012   Code   RO         3958    i.usart_interrupt_flag_clear  gd32f10x_usart.o
-    0x0801663c   0x0801663c   0x00000038   Code   RO         3959    i.usart_interrupt_flag_get  gd32f10x_usart.o
-    0x08016674   0x08016674   0x00000010   Code   RO         3969    i.usart_parity_config  gd32f10x_usart.o
-    0x08016684   0x08016684   0x00000010   Code   RO         3971    i.usart_receive_config  gd32f10x_usart.o
-    0x08016694   0x08016694   0x00000010   Code   RO         3977    i.usart_stop_bit_set  gd32f10x_usart.o
-    0x080166a4   0x080166a4   0x00000010   Code   RO         3981    i.usart_transmit_config  gd32f10x_usart.o
-    0x080166b4   0x080166b4   0x00000010   Code   RO         3982    i.usart_word_length_set  gd32f10x_usart.o
-    0x080166c4   0x080166c4   0x00000030   Code   RO         5146    i.usercmd_deque     queue.o
-    0x080166f4   0x080166f4   0x00000068   Code   RO         5147    i.usercmd_enque     queue.o
-    0x0801675c   0x0801675c   0x00000014   Code   RO         5479    i.wdt_hw_disable    wdt_hw.o
-    0x08016770   0x08016770   0x00000014   Code   RO         5480    i.wdt_hw_enable     wdt_hw.o
-    0x08016784   0x08016784   0x00000040   Code   RO         5481    i.wdt_hw_int        wdt_hw.o
-    0x080167c4   0x080167c4   0x00000024   Code   RO         5482    i.wdt_hw_set_wdi    wdt_hw.o
-    0x080167e8   0x080167e8   0x00000024   Code   RO         4890    i.wiz_cs            w5500_conf.o
-    0x0801680c   0x0801680c   0x00000068   Code   RO         4891    i.wiz_read_buf      w5500_conf.o
-    0x08016874   0x08016874   0x00000068   Code   RO         4892    i.wiz_write_buf     w5500_conf.o
-    0x080168dc   0x080168dc   0x0000008c   Code   RO         4894    i.write_config_to_flash  w5500_conf.o
-    0x08016968   0x08016968   0x00000084   Code   RO         4895    i.write_ver_to_flash  w5500_conf.o
-    0x080169ec   0x080169ec   0x00000051   Data   RO          321    .constdata          main.o
-    0x08016a3d   0x08016a3d   0x00000046   Data   RO         5383    .constdata          secs.o
-    0x08016a83   0x08016a83   0x0000002f   Data   RO         5722    .constdata          gp_io.o
-    0x08016ab2   0x08016ab2   0x00000002   PAD
-    0x08016ab4   0x08016ab4   0x00000048   Data   RO          322    .conststring        main.o
-    0x08016afc   0x08016afc   0x00000020   Data   RO         6416    Region$$Table       anon$$obj.o
+    0x0801165c   0x0801165c   0x00000094   Code   RO          294    i._Debug2           main.o
+    0x080116f0   0x080116f0   0x00000114   Code   RO         4863    i._Get_UUID         w5500_conf.o
+    0x08011804   0x08011804   0x00000020   Code   RO         6324    i.__0printf         mc_w.l(printfa.o)
+    0x08011824   0x08011824   0x00000028   Code   RO         6326    i.__0sprintf        mc_w.l(printfa.o)
+    0x0801184c   0x0801184c   0x00000024   Code   RO         6330    i.__0vsprintf       mc_w.l(printfa.o)
+    0x08011870   0x08011870   0x0000000e   Code   RO         6410    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0801187e   0x0801187e   0x00000002   Code   RO         6411    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08011880   0x08011880   0x0000000e   Code   RO         6412    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0801188e   0x0801188e   0x00000002   PAD
+    0x08011890   0x08011890   0x00000184   Code   RO         6331    i._fp_digits        mc_w.l(printfa.o)
+    0x08011a14   0x08011a14   0x000006b4   Code   RO         6332    i._printf_core      mc_w.l(printfa.o)
+    0x080120c8   0x080120c8   0x00000024   Code   RO         6333    i._printf_post_padding  mc_w.l(printfa.o)
+    0x080120ec   0x080120ec   0x0000002e   Code   RO         6334    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x0801211a   0x0801211a   0x0000000a   Code   RO         6336    i._sputc            mc_w.l(printfa.o)
+    0x08012124   0x08012124   0x00000026   Code   RO          295    i.amkor_nc01_crc    main.o
+    0x0801214a   0x0801214a   0x00000002   PAD
+    0x0801214c   0x0801214c   0x00000134   Code   RO          296    i.before_amkor_nc01_filter  main.o
+    0x08012280   0x08012280   0x00000140   Code   RO          297    i.before_amkor_nc01_rs232_filter  main.o
+    0x080123c0   0x080123c0   0x00000688   Code   RO          299    i.before_secs_filter  main.o
+    0x08012a48   0x08012a48   0x00000030   Code   RO          300    i.checkSecsLinkOk   main.o
+    0x08012a78   0x08012a78   0x00000034   Code   RO         4561    i.close             socket.o
+    0x08012aac   0x08012aac   0x00000020   Code   RO         4447    i.close_atsocket    attcp.o
+    0x08012acc   0x08012acc   0x0000005c   Code   RO         5652    i.confit_rs485      rs485.o
+    0x08012b28   0x08012b28   0x00000014   Code   RO          235    i.delay_1ms         systick.o
+    0x08012b3c   0x08012b3c   0x00000018   Code   RO          236    i.delay_decrement   systick.o
+    0x08012b54   0x08012b54   0x0000000c   Code   RO         4287    i.delay_ms          utility.o
+    0x08012b60   0x08012b60   0x00000030   Code   RO         4289    i.delay_us          utility.o
+    0x08012b90   0x08012b90   0x00000026   Code   RO         4563    i.disconnect        socket.o
+    0x08012bb6   0x08012bb6   0x00000002   PAD
+    0x08012bb8   0x08012bb8   0x00000144   Code   RO         4448    i.do_attcp_cmd      attcp.o
+    0x08012cfc   0x08012cfc   0x000001d8   Code   RO         5074    i.do_fw_update      fw_update.o
+    0x08012ed4   0x08012ed4   0x0000014c   Code   RO         5100    i.do_secstcp_cmd    secstcp.o
+    0x08013020   0x08013020   0x000004dc   Code   RO         4637    i.do_udp_config     udp_config.o
+    0x080134fc   0x080134fc   0x00000058   Code   RO         5137    i.eth_rx_enque      queue.o
+    0x08013554   0x08013554   0x000000bc   Code   RO         1857    i.exti_init         gd32f10x_exti.o
+    0x08013610   0x08013610   0x00000010   Code   RO         1859    i.exti_interrupt_enable  gd32f10x_exti.o
+    0x08013620   0x08013620   0x0000000c   Code   RO         1860    i.exti_interrupt_flag_clear  gd32f10x_exti.o
+    0x0801362c   0x0801362c   0x00000018   Code   RO         1861    i.exti_interrupt_flag_get  gd32f10x_exti.o
+    0x08013644   0x08013644   0x00000022   Code   RO         1943    i.fmc_bank0_ready_wait  gd32f10x_fmc.o
+    0x08013666   0x08013666   0x00000002   PAD
+    0x08013668   0x08013668   0x00000030   Code   RO         1944    i.fmc_bank0_state_get  gd32f10x_fmc.o
+    0x08013698   0x08013698   0x00000022   Code   RO         1948    i.fmc_bank1_ready_wait  gd32f10x_fmc.o
+    0x080136ba   0x080136ba   0x00000002   PAD
+    0x080136bc   0x080136bc   0x00000030   Code   RO         1949    i.fmc_bank1_state_get  gd32f10x_fmc.o
+    0x080136ec   0x080136ec   0x00000020   Code   RO         1951    i.fmc_flag_clear    gd32f10x_fmc.o
+    0x0801370c   0x0801370c   0x0000002c   Code   RO         1958    i.fmc_lock          gd32f10x_fmc.o
+    0x08013738   0x08013738   0x000000f8   Code   RO         1960    i.fmc_page_erase    gd32f10x_fmc.o
+    0x08013830   0x08013830   0x00000044   Code   RO         1961    i.fmc_unlock        gd32f10x_fmc.o
+    0x08013874   0x08013874   0x000000c0   Code   RO         1962    i.fmc_word_program  gd32f10x_fmc.o
+    0x08013934   0x08013934   0x00000024   Code   RO          302    i.fputc             main.o
+    0x08013958   0x08013958   0x000000ec   Code   RO         5269    i.gd_eval_com_init  board.o
+    0x08013a44   0x08013a44   0x00000034   Code   RO         5622    i.generate_crc16    crc16_xmodem.o
+    0x08013a78   0x08013a78   0x00000010   Code   RO         4661    i.getGAR            w5500.o
+    0x08013a88   0x08013a88   0x00000010   Code   RO         4663    i.getIINCHIP_TxMAX  w5500.o
+    0x08013a98   0x08013a98   0x00000012   Code   RO         4667    i.getSIPR           w5500.o
+    0x08013aaa   0x08013aaa   0x00000012   Code   RO         4668    i.getSUBR           w5500.o
+    0x08013abc   0x08013abc   0x00000012   Code   RO         4669    i.getSn_IR          w5500.o
+    0x08013ace   0x08013ace   0x00000054   Code   RO         4670    i.getSn_RX_RSR      w5500.o
+    0x08013b22   0x08013b22   0x00000012   Code   RO         4671    i.getSn_SR          w5500.o
+    0x08013b34   0x08013b34   0x00000054   Code   RO         4672    i.getSn_TX_FSR      w5500.o
+    0x08013b88   0x08013b88   0x00000054   Code   RO         4866    i.get_config        w5500_conf.o
+    0x08013bdc   0x08013bdc   0x0000002c   Code   RO         5703    i.gio_event_deque   gp_io.o
+    0x08013c08   0x08013c08   0x000000ac   Code   RO         5706    i.gp_get_in         gp_io.o
+    0x08013cb4   0x08013cb4   0x00000270   Code   RO         5708    i.gp_io_init        gp_io.o
+    0x08013f24   0x08013f24   0x00000114   Code   RO         5709    i.gp_set_out        gp_io.o
+    0x08014038   0x08014038   0x00000004   Code   RO         2225    i.gpio_bit_reset    gd32f10x_gpio.o
+    0x0801403c   0x0801403c   0x00000004   Code   RO         2226    i.gpio_bit_set      gd32f10x_gpio.o
+    0x08014040   0x08014040   0x0000000a   Code   RO         2227    i.gpio_bit_write    gd32f10x_gpio.o
+    0x0801404a   0x0801404a   0x00000002   PAD
+    0x0801404c   0x0801404c   0x00000098   Code   RO         2232    i.gpio_exti_source_select  gd32f10x_gpio.o
+    0x080140e4   0x080140e4   0x00000044   Code   RO         4868    i.gpio_for_w5500_config  w5500_conf.o
+    0x08014128   0x08014128   0x000000ac   Code   RO         2233    i.gpio_init         gd32f10x_gpio.o
+    0x080141d4   0x080141d4   0x00000010   Code   RO         2234    i.gpio_input_bit_get  gd32f10x_gpio.o
+    0x080141e4   0x080141e4   0x00000090   Code   RO         2239    i.gpio_pin_remap_config  gd32f10x_gpio.o
+    0x08014274   0x08014274   0x0000000a   Code   RO         4869    i.iinchip_csoff     w5500_conf.o
+    0x0801427e   0x0801427e   0x0000000a   Code   RO         4870    i.iinchip_cson      w5500_conf.o
+    0x08014288   0x08014288   0x00000044   Code   RO         5653    i.init_rs485        rs485.o
+    0x080142cc   0x080142cc   0x00000028   Code   RO         5891    i.keypad_init       keypad.o
+    0x080142f4   0x080142f4   0x00000024   Code   RO         5515    i.led_init          led.o
+    0x08014318   0x08014318   0x00000028   Code   RO         5516    i.led_off           led.o
+    0x08014340   0x08014340   0x00000028   Code   RO         5517    i.led_on            led.o
+    0x08014368   0x08014368   0x000000e8   Code   RO          303    i.led_spark         main.o
+    0x08014450   0x08014450   0x00000038   Code   RO         5519    i.led_toggle        led.o
+    0x08014488   0x08014488   0x0000003e   Code   RO         4564    i.listen            socket.o
+    0x080144c6   0x080144c6   0x00000002   PAD
+    0x080144c8   0x080144c8   0x0000018c   Code   RO         5893    i.load_nc01_parameters  keypad.o
+    0x08014654   0x08014654   0x0000002c   Code   RO          305    i.magnetic_gate_beep_on  main.o
+    0x08014680   0x08014680   0x00000518   Code   RO          307    i.main              main.o
+    0x08014b98   0x08014b98   0x00000024   Code   RO          308    i.myputc            main.o
+    0x08014bbc   0x08014bbc   0x0000001a   Code   RO          309    i.myputstr          main.o
+    0x08014bd6   0x08014bd6   0x00000002   PAD
+    0x08014bd8   0x08014bd8   0x00000010   Code   RO         5276    i.nvic_configuration  board.o
+    0x08014be8   0x08014be8   0x000000ac   Code   RO         2547    i.nvic_irq_enable   gd32f10x_misc.o
+    0x08014c94   0x08014c94   0x00000014   Code   RO         2548    i.nvic_priority_group_set  gd32f10x_misc.o
+    0x08014ca8   0x08014ca8   0x00000018   Code   RO         2549    i.nvic_vector_table_set  gd32f10x_misc.o
+    0x08014cc0   0x08014cc0   0x000000f0   Code   RO          310    i.process_com1_com2_test  main.o
+    0x08014db0   0x08014db0   0x000000c4   Code   RO          311    i.process_gpi_filter  main.o
+    0x08014e74   0x08014e74   0x00000068   Code   RO          312    i.process_rcv_amkor_nc01_cmd  main.o
+    0x08014edc   0x08014edc   0x00000090   Code   RO          313    i.process_rcv_amkor_nc01_rs232_cmd  main.o
+    0x08014f6c   0x08014f6c   0x00000046   Code   RO          315    i.process_rcv_secs_cmd  main.o
+    0x08014fb2   0x08014fb2   0x0000002c   Code   RO          316    i.put_test_data_queue  main.o
+    0x08014fde   0x08014fde   0x00000002   PAD
+    0x08014fe0   0x08014fe0   0x00000014   Code   RO         2691    i.rcu_all_reset_flag_clear  gd32f10x_rcu.o
+    0x08014ff4   0x08014ff4   0x00000124   Code   RO         2697    i.rcu_clock_freq_get  gd32f10x_rcu.o
+    0x08015118   0x08015118   0x00000024   Code   RO         2700    i.rcu_flag_get      gd32f10x_rcu.o
+    0x0801513c   0x0801513c   0x00000020   Code   RO         2714    i.rcu_periph_clock_enable  gd32f10x_rcu.o
+    0x0801515c   0x0801515c   0x00000020   Code   RO         2717    i.rcu_periph_reset_disable  gd32f10x_rcu.o
+    0x0801517c   0x0801517c   0x00000020   Code   RO         2718    i.rcu_periph_reset_enable  gd32f10x_rcu.o
+    0x0801519c   0x0801519c   0x00000014   Code   RO         4873    i.reboot            w5500_conf.o
+    0x080151b0   0x080151b0   0x00000042   Code   RO         4565    i.recv              socket.o
+    0x080151f2   0x080151f2   0x00000002   PAD
+    0x080151f4   0x080151f4   0x00000094   Code   RO         4674    i.recv_data_processing  w5500.o
+    0x08015288   0x08015288   0x00000200   Code   RO         4566    i.recvfrom          socket.o
+    0x08015488   0x08015488   0x00000104   Code   RO         5372    i.report_S2F18      secs.o
+    0x0801558c   0x0801558c   0x000000dc   Code   RO         5373    i.report_S2F22      secs.o
+    0x08015668   0x08015668   0x0000003c   Code   RO          317    i.reset_gpi_filter  main.o
+    0x080156a4   0x080156a4   0x0000002c   Code   RO         4875    i.reset_w5500       w5500_conf.o
+    0x080156d0   0x080156d0   0x00000014   Code   RO         2923    i.rtc_configuration_mode_enter  gd32f10x_rtc.o
+    0x080156e4   0x080156e4   0x00000014   Code   RO         2924    i.rtc_configuration_mode_exit  gd32f10x_rtc.o
+    0x080156f8   0x080156f8   0x00000014   Code   RO         2925    i.rtc_counter_get   gd32f10x_rtc.o
+    0x0801570c   0x0801570c   0x00000020   Code   RO         2926    i.rtc_counter_set   gd32f10x_rtc.o
+    0x0801572c   0x0801572c   0x00000010   Code   RO         2928    i.rtc_flag_clear    gd32f10x_rtc.o
+    0x0801573c   0x0801573c   0x00000018   Code   RO         2929    i.rtc_flag_get      gd32f10x_rtc.o
+    0x08015754   0x08015754   0x00000014   Code   RO         2934    i.rtc_lwoff_wait    gd32f10x_rtc.o
+    0x08015768   0x08015768   0x00000038   Code   RO         5191    i.secs_post_received_data  sio.o
+    0x080157a0   0x080157a0   0x000000ec   Code   RO         4567    i.send              socket.o
+    0x0801588c   0x0801588c   0x00000094   Code   RO         4675    i.send_data_processing  w5500.o
+    0x08015920   0x08015920   0x0000003c   Code   RO         5101    i.send_secs_socket  secstcp.o
+    0x0801595c   0x0801595c   0x0000003c   Code   RO         4449    i.send_tcp_socket   attcp.o
+    0x08015998   0x08015998   0x0000010c   Code   RO         4568    i.sendto            socket.o
+    0x08015aa4   0x08015aa4   0x00000010   Code   RO         4676    i.setGAR            w5500.o
+    0x08015ab4   0x08015ab4   0x00000010   Code   RO         4678    i.setRCR            w5500.o
+    0x08015ac4   0x08015ac4   0x0000001a   Code   RO         4679    i.setRTR            w5500.o
+    0x08015ade   0x08015ade   0x00000012   Code   RO         4680    i.setSHAR           w5500.o
+    0x08015af0   0x08015af0   0x00000012   Code   RO         4681    i.setSIPR           w5500.o
+    0x08015b02   0x08015b02   0x00000012   Code   RO         4682    i.setSUBR           w5500.o
+    0x08015b14   0x08015b14   0x00000016   Code   RO         4683    i.setSn_IR          w5500.o
+    0x08015b2a   0x08015b2a   0x00000002   PAD
+    0x08015b2c   0x08015b2c   0x000000a8   Code   RO         4876    i.set_default       w5500_conf.o
+    0x08015bd4   0x08015bd4   0x00000110   Code   RO         4877    i.set_network       w5500_conf.o
+    0x08015ce4   0x08015ce4   0x00000010   Code   RO         5192    i.sio_byte_buf_enqueue  sio.o
+    0x08015cf4   0x08015cf4   0x0000000e   Code   RO         5193    i.sio_byte_buf_flush  sio.o
+    0x08015d02   0x08015d02   0x00000002   PAD
+    0x08015d04   0x08015d04   0x00000038   Code   RO         5194    i.sio_post_received_data  sio.o
+    0x08015d3c   0x08015d3c   0x000000c4   Code   RO         4569    i.socket            socket.o
+    0x08015e00   0x08015e00   0x00000088   Code   RO         4686    i.socket_buf_init   w5500.o
+    0x08015e88   0x08015e88   0x0000000c   Code   RO         3327    i.spi_crc_polynomial_set  gd32f10x_spi.o
+    0x08015e94   0x08015e94   0x0000000a   Code   RO         3331    i.spi_enable        gd32f10x_spi.o
+    0x08015e9e   0x08015e9e   0x00000008   Code   RO         3333    i.spi_i2s_data_receive  gd32f10x_spi.o
+    0x08015ea6   0x08015ea6   0x00000004   Code   RO         3334    i.spi_i2s_data_transmit  gd32f10x_spi.o
+    0x08015eaa   0x08015eaa   0x00000010   Code   RO         3336    i.spi_i2s_flag_get  gd32f10x_spi.o
+    0x08015eba   0x08015eba   0x00000032   Code   RO         3340    i.spi_init          gd32f10x_spi.o
+    0x08015eec   0x08015eec   0x00000010   Code   RO          320    i.start_TIM4        main.o
+    0x08015efc   0x08015efc   0x00000010   Code   RO          321    i.stop_TIM4         main.o
+    0x08015f0c   0x08015f0c   0x0000014c   Code   RO          322    i.switchLEDmode     main.o
+    0x08016058   0x08016058   0x000000c4   Code   RO          609    i.system_clock_108m_hxtal  system_gd32f10x.o
+    0x0801611c   0x0801611c   0x00000008   Code   RO          610    i.system_clock_config  system_gd32f10x.o
+    0x08016124   0x08016124   0x00000050   Code   RO          237    i.systick_config    systick.o
+    0x08016174   0x08016174   0x000000f4   Code   RO          323    i.timer4_isr        main.o
+    0x08016268   0x08016268   0x000000dc   Code   RO         3544    i.timer_deinit      gd32f10x_timer.o
+    0x08016344   0x08016344   0x0000000a   Code   RO         3545    i.timer_disable     gd32f10x_timer.o
+    0x0801634e   0x0801634e   0x0000000a   Code   RO         3549    i.timer_enable      gd32f10x_timer.o
+    0x08016358   0x08016358   0x000000e0   Code   RO         3559    i.timer_init        gd32f10x_timer.o
+    0x08016438   0x08016438   0x00000008   Code   RO         3566    i.timer_interrupt_enable  gd32f10x_timer.o
+    0x08016440   0x08016440   0x00000006   Code   RO         3567    i.timer_interrupt_flag_clear  gd32f10x_timer.o
+    0x08016446   0x08016446   0x00000018   Code   RO         3568    i.timer_interrupt_flag_get  gd32f10x_timer.o
+    0x0801645e   0x0801645e   0x00000002   PAD
+    0x08016460   0x08016460   0x00000090   Code   RO         3945    i.usart_baudrate_set  gd32f10x_usart.o
+    0x080164f0   0x080164f0   0x0000000a   Code   RO         3946    i.usart_data_receive  gd32f10x_usart.o
+    0x080164fa   0x080164fa   0x00000008   Code   RO         3947    i.usart_data_transmit  gd32f10x_usart.o
+    0x08016502   0x08016502   0x00000002   PAD
+    0x08016504   0x08016504   0x00000090   Code   RO         3948    i.usart_deinit      gd32f10x_usart.o
+    0x08016594   0x08016594   0x0000000a   Code   RO         3952    i.usart_enable      gd32f10x_usart.o
+    0x0801659e   0x0801659e   0x0000001e   Code   RO         3954    i.usart_flag_get    gd32f10x_usart.o
+    0x080165bc   0x080165bc   0x00000014   Code   RO         3958    i.usart_hardware_flow_cts_config  gd32f10x_usart.o
+    0x080165d0   0x080165d0   0x00000014   Code   RO         3959    i.usart_hardware_flow_rts_config  gd32f10x_usart.o
+    0x080165e4   0x080165e4   0x0000001a   Code   RO         3961    i.usart_interrupt_enable  gd32f10x_usart.o
+    0x080165fe   0x080165fe   0x00000012   Code   RO         3962    i.usart_interrupt_flag_clear  gd32f10x_usart.o
+    0x08016610   0x08016610   0x00000038   Code   RO         3963    i.usart_interrupt_flag_get  gd32f10x_usart.o
+    0x08016648   0x08016648   0x00000010   Code   RO         3973    i.usart_parity_config  gd32f10x_usart.o
+    0x08016658   0x08016658   0x00000010   Code   RO         3975    i.usart_receive_config  gd32f10x_usart.o
+    0x08016668   0x08016668   0x00000010   Code   RO         3981    i.usart_stop_bit_set  gd32f10x_usart.o
+    0x08016678   0x08016678   0x00000010   Code   RO         3985    i.usart_transmit_config  gd32f10x_usart.o
+    0x08016688   0x08016688   0x00000010   Code   RO         3986    i.usart_word_length_set  gd32f10x_usart.o
+    0x08016698   0x08016698   0x00000030   Code   RO         5138    i.usercmd_deque     queue.o
+    0x080166c8   0x080166c8   0x00000068   Code   RO         5139    i.usercmd_enque     queue.o
+    0x08016730   0x08016730   0x00000014   Code   RO         5471    i.wdt_hw_disable    wdt_hw.o
+    0x08016744   0x08016744   0x00000014   Code   RO         5472    i.wdt_hw_enable     wdt_hw.o
+    0x08016758   0x08016758   0x00000040   Code   RO         5473    i.wdt_hw_int        wdt_hw.o
+    0x08016798   0x08016798   0x00000024   Code   RO         5474    i.wdt_hw_set_wdi    wdt_hw.o
+    0x080167bc   0x080167bc   0x00000024   Code   RO         4882    i.wiz_cs            w5500_conf.o
+    0x080167e0   0x080167e0   0x00000068   Code   RO         4883    i.wiz_read_buf      w5500_conf.o
+    0x08016848   0x08016848   0x00000068   Code   RO         4884    i.wiz_write_buf     w5500_conf.o
+    0x080168b0   0x080168b0   0x0000008c   Code   RO         4886    i.write_config_to_flash  w5500_conf.o
+    0x0801693c   0x0801693c   0x00000084   Code   RO         4887    i.write_ver_to_flash  w5500_conf.o
+    0x080169c0   0x080169c0   0x00000051   Data   RO          325    .constdata          main.o
+    0x08016a11   0x08016a11   0x00000046   Data   RO         5375    .constdata          secs.o
+    0x08016a57   0x08016a57   0x0000002f   Data   RO         5714    .constdata          gp_io.o
+    0x08016a86   0x08016a86   0x00000002   PAD
+    0x08016a88   0x08016a88   0x00000048   Data   RO          326    .conststring        main.o
+    0x08016ad0   0x08016ad0   0x00000020   Data   RO         6408    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08016b1c, Size: 0x00001cf8, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x0000046c])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08016af0, Size: 0x00001cf0, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x0000046c])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   COMPRESSED   0x00000004   Data   RW          234    .data               systick.o
-    0x20000004   COMPRESSED   0x00000094   Data   RW          323    .data               main.o
-    0x20000098   COMPRESSED   0x00000004   Data   RW          607    .data               system_gd32f10x.o
-    0x2000009c   COMPRESSED   0x0000000c   Data   RW         4455    .data               attcp.o
-    0x200000a8   COMPRESSED   0x00000152   Data   RW         4498    .data               auto_update.o
-    0x200001fa   COMPRESSED   0x0000000e   Data   RW         4646    .data               udp_config.o
-    0x20000208   COMPRESSED   0x00000010   Data   RW         4696    .data               w5500.o
-    0x20000218   COMPRESSED   0x00000029   Data   RW         4897    .data               w5500_conf.o
+    0x20000000   COMPRESSED   0x00000004   Data   RW          238    .data               systick.o
+    0x20000004   COMPRESSED   0x00000094   Data   RW          327    .data               main.o
+    0x20000098   COMPRESSED   0x00000004   Data   RW          611    .data               system_gd32f10x.o
+    0x2000009c   COMPRESSED   0x0000000c   Data   RW         4451    .data               attcp.o
+    0x200000a8   COMPRESSED   0x00000152   Data   RW         4490    .data               auto_update.o
+    0x200001fa   COMPRESSED   0x0000000e   Data   RW         4638    .data               udp_config.o
+    0x20000208   COMPRESSED   0x00000010   Data   RW         4688    .data               w5500.o
+    0x20000218   COMPRESSED   0x00000029   Data   RW         4889    .data               w5500_conf.o
     0x20000241   COMPRESSED   0x00000003   PAD
-    0x20000244   COMPRESSED   0x00000017   Data   RW         5084    .data               fw_update.o
+    0x20000244   COMPRESSED   0x00000017   Data   RW         5076    .data               fw_update.o
     0x2000025b   COMPRESSED   0x00000001   PAD
-    0x2000025c   COMPRESSED   0x0000000c   Data   RW         5111    .data               secstcp.o
-    0x20000268   COMPRESSED   0x0000007d   Data   RW         5290    .data               board.o
+    0x2000025c   COMPRESSED   0x0000000c   Data   RW         5103    .data               secstcp.o
+    0x20000268   COMPRESSED   0x0000007d   Data   RW         5282    .data               board.o
     0x200002e5   COMPRESSED   0x00000003   PAD
-    0x200002e8   COMPRESSED   0x000000a4   Data   RW         5384    .data               secs.o
-    0x2000038c   COMPRESSED   0x00000004   Data   RW         5578    .data               rtc.o
-    0x20000390   COMPRESSED   0x00000200   Data   RW         5631    .data               crc16_xmodem.o
-    0x20000590   COMPRESSED   0x00000004   Data   RW         5665    .data               rs485.o
-    0x20000594   COMPRESSED   0x00000069   Data   RW         5903    .data               keypad.o
-    0x200005fd   COMPRESSED   0x00000003   PAD
-    0x20000600   COMPRESSED   0x00000004   Data   RW         6394    .data               mc_w.l(stdout.o)
-    0x20000604        -       0x00000080   Zero   RW          320    .bss                main.o
-    0x20000684        -       0x00000100   Zero   RW         4454    .bss                attcp.o
-    0x20000784        -       0x00000020   Zero   RW         4695    .bss                w5500.o
-    0x200007a4        -       0x000000c8   Zero   RW         4896    .bss                w5500_conf.o
-    0x2000086c        -       0x00000400   Zero   RW         5083    .bss                fw_update.o
-    0x20000c6c        -       0x00000100   Zero   RW         5110    .bss                secstcp.o
-    0x20000d6c        -       0x00000840   Zero   RW         5148    .bss                queue.o
-    0x200015ac        -       0x00000186   Zero   RW         5203    .bss                sio.o
-    0x20001732   COMPRESSED   0x00000002   PAD
-    0x20001734        -       0x000001c0   Zero   RW         5721    .bss                gp_io.o
-    0x200018f4   COMPRESSED   0x00000004   PAD
-    0x200018f8        -       0x00000400   Zero   RW         4269    STACK               startup_gd32f10x_hd.o
+    0x200002e8   COMPRESSED   0x000000a4   Data   RW         5376    .data               secs.o
+    0x2000038c   COMPRESSED   0x00000004   Data   RW         5570    .data               rtc.o
+    0x20000390   COMPRESSED   0x00000200   Data   RW         5623    .data               crc16_xmodem.o
+    0x20000590   COMPRESSED   0x00000004   Data   RW         5657    .data               rs485.o
+    0x20000594   COMPRESSED   0x00000063   Data   RW         5895    .data               keypad.o
+    0x200005f7   COMPRESSED   0x00000001   PAD
+    0x200005f8   COMPRESSED   0x00000004   Data   RW         6386    .data               mc_w.l(stdout.o)
+    0x200005fc        -       0x00000080   Zero   RW          324    .bss                main.o
+    0x2000067c        -       0x00000100   Zero   RW         4450    .bss                attcp.o
+    0x2000077c        -       0x00000020   Zero   RW         4687    .bss                w5500.o
+    0x2000079c        -       0x000000c8   Zero   RW         4888    .bss                w5500_conf.o
+    0x20000864        -       0x00000400   Zero   RW         5075    .bss                fw_update.o
+    0x20000c64        -       0x00000100   Zero   RW         5102    .bss                secstcp.o
+    0x20000d64        -       0x00000840   Zero   RW         5140    .bss                queue.o
+    0x200015a4        -       0x00000186   Zero   RW         5195    .bss                sio.o
+    0x2000172a   COMPRESSED   0x00000002   PAD
+    0x2000172c        -       0x000001c0   Zero   RW         5713    .bss                gp_io.o
+    0x200018ec   COMPRESSED   0x00000004   PAD
+    0x200018f0        -       0x00000400   Zero   RW         4273    STACK               startup_gd32f10x_hd.o
 
 
 ==============================================================================
@@ -3389,7 +3384,7 @@ Image component sizes
        252         32          0        125          0       2060   board.o
        216         20          0          0          0       1226   bsp_spi_eth.o
        104         12          0        512          0       2040   crc16_xmodem.o
-       480         58          0         23       1024       1636   fw_update.o
+       472         58          0         23       1024       1564   fw_update.o
        240         20          0          0          0       6858   gd32f10x_exti.o
        748         66          0          0          0      11407   gd32f10x_fmc.o
        502         12          0          0          0      14708   gd32f10x_gpio.o
@@ -3402,9 +3397,9 @@ Image component sizes
        566         16          0          0          0      16200   gd32f10x_usart.o
       1116         74         47          0        448       6183   gp_io.o
        644         42          0          0          0       5067   i2c_io.o
-       436         20          0        105          0       5078   keypad.o
+       436         20          0         99          0       3389   keypad.o
        172         22          0          0          0       2335   led.o
-      6266       1414        153        148        128      27339   main.o
+      6230       1418        153        148        128      27255   main.o
        450         40          0          0          0       5517   max7219.o
        240         16          0          0       2112       3254   queue.o
        272         34          0          4          0       1656   rs485.o
@@ -3417,16 +3412,16 @@ Image component sizes
         36          8        304          0       1024        868   startup_gd32f10x_hd.o
        416         30          0          4          0       2815   system_gd32f10x.o
        164         24          0          4          0      28718   systick.o
-      1244         58          0         14          0       2097   udp_config.o
+      1244         58          0         14          0       2109   udp_config.o
         60          8          0          0          0       2086   utility.o
        838         78          0         16         32      10432   w5500.o
       1756        370          0         41        200      16858   w5500_conf.o
        140         20          0          0          0       1883   wdt_hw.o
 
     ----------------------------------------------------------------------
-     22426       3090        608       1536       5876     305376   Object Totals
+     22382       3094        608       1528       5876     303543   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        30          0          2         10          6          0   (incl. Padding)
+        30          0          2          8          6          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -3491,15 +3486,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     26812       3208        608       1540       5876     295296   Grand Totals
-     26812       3208        608       1132       5876     295296   ELF Image Totals (compressed)
-     26812       3208        608       1132          0          0   ROM Totals
+     26768       3212        608       1532       5876     293463   Grand Totals
+     26768       3212        608       1132       5876     293463   ELF Image Totals (compressed)
+     26768       3212        608       1132          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                27420 (  26.78kB)
-    Total RW  Size (RW Data + ZI Data)              7416 (   7.24kB)
-    Total ROM Size (Code + RO Data + RW Data)      28552 (  27.88kB)
+    Total RO  Size (Code + RO Data)                27376 (  26.73kB)
+    Total RW  Size (RW Data + ZI Data)              7408 (   7.23kB)
+    Total ROM Size (Code + RO Data + RW Data)      28508 (  27.84kB)
 
 ==============================================================================
 

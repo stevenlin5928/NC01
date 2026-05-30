@@ -563,10 +563,11 @@ int before_secs_filter(uint8_t *data,int len)
 				printf("No response\n"); 
 				send_secs_socket(SECS_S1F4_DATA_RESP, 23);
 			}
-			// DATA Length
+			// value Length
 			SECS_S1F4_DATA_RESP[17] = strlen(v_str);
-			// Message Length
+			// Data Length
 			SECS_S1F4_DATA_RESP[3] = 14 + strlen(v_str);
+			// Message Length
 			uint16 _total_len_ = 4 + SECS_S1F4_DATA_RESP[3];
 			
 			// Send to server
@@ -1340,32 +1341,27 @@ int myputstr(uint8_t *buf,int len)
 
 void _Debug2(int type, char *mess, ...)
 {
-	int		len = 0;
 	char	buf[256] = {0};
 	char	buf2[256] = {0};
 	va_list	ptr;
-	
-	if(type != 9 && debug_flag != 0) return;
 
 	va_start(ptr, mess);
 	vsprintf(buf, mess, ptr);
 	va_end(ptr);
 	if(type == 0)
-		len = sprintf(buf2, "[DEBUG]--> %s", buf);
-	else if(type == 1)
-		len = sprintf(buf2, "[ERR]--> %s", buf);
+		sprintf(buf2, "[DEBUG]--> %s", buf);
 	else if(type == 9)
 	{
-		len = sprintf(buf2, "[DEBUG]--> %s", buf);
+		sprintf(buf2, "[ERROR]--> %s", buf);
 	}
 	else
 	{
-		len = sprintf(buf2, "%s", buf);
+		sprintf(buf2, "%s", buf);
 	}
 	
 	// print debuf log to UART2
 	//_UART_SendByteArray(USART2, (unsigned char*)buf2, len);
-	printf("%s",buf2);
+	printf("%s\n",buf2);
 }
 
 void put_test_data_queue(uint8_t *data,int len,uint8_t type)

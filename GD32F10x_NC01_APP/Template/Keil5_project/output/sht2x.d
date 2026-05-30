@@ -34,3 +34,5 @@
 .\output\sht2x.o: ..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_can.h
 .\output\sht2x.o: ..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_enet.h
 .\output\sht2x.o: ..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h
+.\output\sht2x.o: ..\..\Utilities\utility.h
+.\output\sht2x.o: ..\..\W5500\types.h

@@ -1,6 +1,8 @@
 #include "keypad.h"
 #include "w5500_conf.h"
 #include "max7219.h"
+#include "utility.h"
+
 /*FNx_par fnx_par[OP_MAX]={
 	{OP00,200,200,1},
 	{OP01,240,240,1},
@@ -116,7 +118,7 @@ int8_t is_normal_mode(){
 */
 uint8_t keypad_process(uint8_t key_id,uint8_t pressed)
 {
-	uint8_t status;
+	int8_t status;
 	printf("%s normal_op:%d key_id:%d \n",__func__,normal_op,key_id);
 	switch(key_id)
 	{
@@ -128,10 +130,17 @@ uint8_t keypad_process(uint8_t key_id,uint8_t pressed)
 				keypad_op.cur_mode=OP00;
 			}
 			else
-				keypad_op.cur_mode=(++keypad_op.cur_mode)%OP_MAX;
+			{
+				//keypad_op.cur_mode=(++keypad_op.cur_mode)%OP_MAX;  // 2026-5-30
+				int next_mode = (keypad_op.cur_mode + 1) % OP_MAX;	// 2026-5-30
+				keypad_op.cur_mode = (MODE_FN)next_mode;						// 2026-5-30 by steven
+
+			}
+				
+			
 			keypad_op.pFnxpar=&fnx_par[keypad_op.cur_mode%OP_MAX];
 			status=1;
-			static uint32_t num=0;
+			//static uint32_t num=0;
 			uint32_t v=keypad_op.cur_mode%10;
 
 			Write_Max7219(8,0);
@@ -157,8 +166,8 @@ uint8_t keypad_process(uint8_t key_id,uint8_t pressed)
 				Write_Max7219(4,v);
 			bFlash=0;
 		}
-			break;
 		break;
+		
 		case 1:
 		{
 			if(normal_op==0){

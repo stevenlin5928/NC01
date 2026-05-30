@@ -1,6 +1,6 @@
 Dependencies for Project 'Project', Target 'GD32F10X_HD': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\gd32f10x_it.c)(0x6805D8EB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\gd32f10x_it.o --omf_browse .\output\gd32f10x_it.crf --depend .\output\gd32f10x_it.d)
+F (..\gd32f10x_it.c)(0x6A1AB470)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\gd32f10x_it.o --omf_browse .\output\gd32f10x_it.crf --depend .\output\gd32f10x_it.d)
 I (..\gd32f10x_it.h)(0x659E469B)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -36,6 +36,7 @@ I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E46
 I (..\main.h)(0x67E0EEBF)
 I (..\systick.h)(0x659E469B)
 I (..\..\gpio\gp_io.h)(0x6805D9E5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 F (..\systick.c)(0x687F744B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\systick.o --omf_browse .\output\systick.crf --depend .\output\systick.d)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -69,7 +70,7 @@ I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_enet.h)(0x659E46
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E4696)
 I (..\systick.h)(0x659E469B)
-F (..\main.c)(0x6A196F54)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+F (..\main.c)(0x6A1AB41D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -113,7 +114,7 @@ I (..\..\W5500\udp_config.h)(0x670F45B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\..\W5500\socket.h)(0x670F4576)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
-I (..\..\Utilities\utility.h)(0x670F46D7)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
 I (..\..\W5500\fw_update.h)(0x670F45B2)
 I (..\..\sio\sio.h)(0x6A17AFC4)
 I (..\..\Led\Led.h)(0x6746B394)
@@ -903,7 +904,7 @@ F (..\..\Firmware\CMSIS\GD\GD32F10x\Source\ARM\startup_gd32f10x_cl.s)(0x659E4696
 F (..\..\Firmware\CMSIS\GD\GD32F10x\Source\ARM\startup_gd32f10x_hd.s)(0x659E4696)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "GD32F10X_HD SETA 1" --pd "USE_STDPERIPH_DRIVER SETA 1"--list .\list\startup_gd32f10x_hd.lst --xref -o .\output\startup_gd32f10x_hd.o --depend .\output\startup_gd32f10x_hd.d)
 F (..\..\Firmware\CMSIS\GD\GD32F10x\Source\ARM\startup_gd32f10x_md.s)(0x659E4696)()
 F (..\..\Firmware\CMSIS\GD\GD32F10x\Source\ARM\startup_gd32f10x_xd.s)(0x659E4696)()
-F (..\..\Utilities\utility.c)(0x687F626A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\utility.o --omf_browse .\output\utility.crf --depend .\output\utility.d)
+F (..\..\Utilities\utility.c)(0x6A1AB8E4)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\utility.o --omf_browse .\output\utility.crf --depend .\output\utility.d)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -939,9 +940,10 @@ I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E46
 I (..\..\W5500\Types.h)(0x643CA6F4)
 I (..\..\W5500\w5500_conf.h)(0x6808A284)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (..\..\Utilities\utility.h)(0x670F46D7)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\systick.h)(0x659E469B)
 F (..\readme.txt)(0x659E469B)()
 F (..\..\W5500\attcp.c)(0x6757C56C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\attcp.o --omf_browse .\output\attcp.crf --depend .\output\attcp.d)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
@@ -1022,7 +1024,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\..\W5500\socket.h)(0x670F4576)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
-I (..\..\Utilities\utility.h)(0x670F46D7)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
 F (..\..\W5500\config.c)(0x670F4C0A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\config.o --omf_browse .\output\config.crf --depend .\output\config.d)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -1095,7 +1097,7 @@ I (..\..\W5500\Types.h)(0x643CA6F4)
 I (..\..\W5500\W5500_conf.h)(0x6808A284)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
-F (..\..\W5500\udp_config.c)(0x687DA6C4)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\udp_config.o --omf_browse .\output\udp_config.crf --depend .\output\udp_config.d)
+F (..\..\W5500\udp_config.c)(0x6A1ABA14)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\udp_config.o --omf_browse .\output\udp_config.crf --depend .\output\udp_config.d)
 I (..\..\W5500\udp_config.h)(0x670F45B2)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -1134,7 +1136,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\..\W5500\socket.h)(0x670F4576)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
-I (..\..\Utilities\utility.h)(0x670F46D7)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
 F (..\..\W5500\w5500.c)(0x689E9D53)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\w5500.o --omf_browse .\output\w5500.crf --depend .\output\w5500.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -1210,10 +1212,10 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E4696)
 I (..\..\W5500\types.h)(0x643CA6F4)
 I (..\..\SPI\bsp_spi_eth.h)(0x670F50C5)
-I (..\..\Utilities\utility.h)(0x670F46D7)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
 I (..\..\W5500\dhcp.h)(0x670F4D48)
-F (..\..\W5500\fw_update.c)(0x6761251A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\fw_update.o --omf_browse .\output\fw_update.crf --depend .\output\fw_update.d)
+F (..\..\W5500\fw_update.c)(0x6A1ABA9A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\fw_update.o --omf_browse .\output\fw_update.crf --depend .\output\fw_update.d)
 I (..\..\W5500\fw_update.h)(0x670F45B2)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -1443,7 +1445,7 @@ I (..\..\W5500\udp_config.h)(0x670F45B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\..\W5500\socket.h)(0x670F4576)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
-I (..\..\Utilities\utility.h)(0x670F46D7)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
 I (..\..\W5500\fw_update.h)(0x670F45B2)
 I (..\..\sio\sio.h)(0x6A17AFC4)
 I (..\..\Led\Led.h)(0x6746B394)
@@ -1460,7 +1462,7 @@ I (..\..\sht\app_i2c.h)(0x68009BB5)
 I (..\..\sht\sht21.h)(0x68020C58)
 I (..\..\max7219\max7219.h)(0x6842BBA2)
 I (..\..\Keypad\keypad.h)(0x687F21D4)
-F (..\..\SECS\secs.c)(0x6A17BED3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\secs.o --omf_browse .\output\secs.crf --depend .\output\secs.d)
+F (..\..\SECS\secs.c)(0x6A1ABC5E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\secs.o --omf_browse .\output\secs.crf --depend .\output\secs.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -1633,7 +1635,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 F (..\..\crc\Crc16_xmodem.c)(0x675AD4EE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\crc16_xmodem.o --omf_browse .\output\crc16_xmodem.crf --depend .\output\crc16_xmodem.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (..\..\crc\Crc16_xmodem.h)(0x646C3274)
-F (..\..\rs485\rs485.c)(0x6802010C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\rs485.o --omf_browse .\output\rs485.crf --depend .\output\rs485.d)
+F (..\..\rs485\rs485.c)(0x6A1ABBD5)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\rs485.o --omf_browse .\output\rs485.crf --depend .\output\rs485.d)
 I (..\..\Board\Board.h)(0x680455FF)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -1674,7 +1676,7 @@ I (..\..\W5500\udp_config.h)(0x670F45B2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\..\W5500\socket.h)(0x670F4576)
 I (..\..\W5500\w5500.h)(0x689E9D7B)
-I (..\..\Utilities\utility.h)(0x670F46D7)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
 I (..\..\W5500\fw_update.h)(0x670F45B2)
 I (..\..\sio\sio.h)(0x6A17AFC4)
 I (..\..\Led\Led.h)(0x6746B394)
@@ -1691,7 +1693,7 @@ I (..\..\sht\app_i2c.h)(0x68009BB5)
 I (..\..\sht\sht21.h)(0x68020C58)
 I (..\..\max7219\max7219.h)(0x6842BBA2)
 I (..\..\Keypad\keypad.h)(0x687F21D4)
-F (..\..\gpio\gp_io.c)(0x6805D311)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\gp_io.o --omf_browse .\output\gp_io.crf --depend .\output\gp_io.d)
+F (..\..\gpio\gp_io.c)(0x6A1ABC7C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\gp_io.o --omf_browse .\output\gp_io.crf --depend .\output\gp_io.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (..\..\gpio\gp_io.h)(0x6805D9E5)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
@@ -1725,7 +1727,7 @@ I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_can.h)(0x659E469
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_enet.h)(0x659E4696)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E4696)
-F (..\..\max7219\max7219.c)(0x6825560F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\max7219.o --omf_browse .\output\max7219.crf --depend .\output\max7219.d)
+F (..\..\max7219\max7219.c)(0x6A1AB70C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\max7219.o --omf_browse .\output\max7219.crf --depend .\output\max7219.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -1759,7 +1761,9 @@ I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_enet.h)(0x659E46
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E4696)
 I (..\..\max7219\max7219.h)(0x6842BBA2)
-F (..\..\Keypad\keypad.c)(0x689D7734)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\keypad.o --omf_browse .\output\keypad.crf --depend .\output\keypad.d)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
+I (..\..\W5500\types.h)(0x643CA6F4)
+F (..\..\Keypad\keypad.c)(0x6A1ABE83)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\keypad.o --omf_browse .\output\keypad.crf --depend .\output\keypad.d)
 I (..\..\Keypad\keypad.h)(0x687F21D4)
 I (..\..\Firmware\CMSIS\GD\GD32F10x\Include\gd32f10x.h)(0x659E4695)
 I (..\..\Firmware\CMSIS\core_cm3.h)(0x659E4696)
@@ -1796,7 +1800,8 @@ I (..\..\W5500\w5500_conf.h)(0x6808A284)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (..\..\W5500\types.h)(0x643CA6F4)
 I (..\..\max7219\max7219.h)(0x6842BBA2)
-F (..\..\SHT_IO\I2C_IO.c)(0x68254AB9)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\i2c_io.o --omf_browse .\output\i2c_io.crf --depend .\output\i2c_io.d)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
+F (..\..\SHT_IO\I2C_IO.c)(0x6A1AB6E3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\i2c_io.o --omf_browse .\output\i2c_io.crf --depend .\output\i2c_io.d)
 I (..\..\SHT_IO\I2C_IO.h)(0x68254CF1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
@@ -1830,7 +1835,10 @@ I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_exmc.h)(0x659E46
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_can.h)(0x659E4696)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_enet.h)(0x659E4696)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E4696)
-F (..\..\SHT_IO\SHT2x.c)(0x687F4AE3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\sht2x.o --omf_browse .\output\sht2x.crf --depend .\output\sht2x.d)
+I (..\systick.h)(0x659E469B)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
+I (..\..\W5500\types.h)(0x643CA6F4)
+F (..\..\SHT_IO\SHT2x.c)(0x6A1AB731)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS\GD\GD32F10x\Include -I ..\..\Firmware\CMSIS -I ..\..\Utilities -I ..\ -I ..\..\Utilities\LCD_common -I ..\..\Firmware\GD32F10x_standard_peripheral\Include -I ..\..\queue -I ..\..\ringbuffer -I ..\..\W5500 -I ..\..\sio -I ..\..\SPI -I ..\..\Board -I ..\..\Barcode -I ..\..\LF -I ..\..\u8g2\csrc -I ..\..\u8g2\sys\arm\gd32 -I ..\..\SECS -I ..\..\Beep -I ..\..\Wdt_hw -I ..\..\Led -I ..\..\Rtc -I ..\..\Crc -I ..\..\rs485 -I ..\..\gpio -I ..\..\sht -I ..\..\max7219 -I ..\..\Keypad -I ..\..\SHT_IO-IC:\Users\steve\AppData\Local\Arm\Packs\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -DGD32F10X_HD -DUSE_STDPERIPH_DRIVER -DUSE_STDPERIPH_DRIVER -DGD32F10X_HD-o .\output\sht2x.o --omf_browse .\output\sht2x.crf --depend .\output\sht2x.d)
 I (..\..\SHT_IO\SHT2x.h)(0x68254A75)
 I (..\..\SHT_IO\I2C_IO.h)(0x68254CF1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
@@ -1865,3 +1873,5 @@ I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_exmc.h)(0x659E46
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_can.h)(0x659E4696)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_enet.h)(0x659E4696)
 I (..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h)(0x659E4696)
+I (..\..\Utilities\utility.h)(0x6A1AB8AA)
+I (..\..\W5500\types.h)(0x643CA6F4)

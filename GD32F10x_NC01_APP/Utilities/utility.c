@@ -19,22 +19,23 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
+#include "systick.h"
 
-
-static u8  fac_us=0;																										/*us延时倍乘数*/
-static u16 fac_ms=0;																										/*ms延时倍乘数*/
+//2026-5-30 stsven  
+//static u8  fac_us=0;																										/*us延时倍乘数*/
+//static u16 fac_ms=0;																										/*ms延时倍乘数*/
 
 /**
 *@brief		初始化延迟函数
 *@param		SYSCLK:系统时钟
 *@return	无
 */
-void systick_init (u8 sysclk)
-{
-	SysTick->CTRL&=0xfffffffb;																						/*bit2清空,选择外部时钟  HCLK/8*/
-	fac_us=sysclk/8;		    
-	fac_ms=(u16)fac_us*1000;
-}								    
+//void systick_init (u8 sysclk)
+//{
+//	SysTick->CTRL&=0xfffffffb;																						/*bit2清空,选择外部时钟  HCLK/8*/
+//	fac_us=sysclk/8;		    
+//	fac_ms=(u16)fac_us*1000;
+//}	2026-5-30 stsven  
 
 /**
 *@brief	  秒延时函数
@@ -87,7 +88,8 @@ void delay_us(uint32 us)
     uint32_t start_tick = SysTick->VAL;
     uint32_t us_tick = us * (SystemCoreClock / 1000000);
     while ((start_tick - SysTick->VAL) < us_tick) {
-        __NOP;
+        //__NOP;
+				__asm("NOP"); // steven at 2026-5-30
     }
 }
 

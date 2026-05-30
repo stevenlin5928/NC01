@@ -35,11 +35,12 @@ OF SUCH DAMAGE.
 #include "main.h"
 #include "systick.h"
 #include "gp_io.h"
+#include <stdio.h>
+
 extern __IO uint32_t timedisplay;
 extern int8_t m_reset_event;
 extern __IO uint32_t ms_counter;
-
-extern _GPI_FILTER gpi_filter[4];
+extern _GPI_FILTER gpi_filter[GPI_MAX];
 
 /*!
     \brief      this function handles NMI exception

@@ -33,3 +33,6 @@
 .\output\i2c_io.o: ..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_can.h
 .\output\i2c_io.o: ..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_enet.h
 .\output\i2c_io.o: ..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h
+.\output\i2c_io.o: ..\systick.h
+.\output\i2c_io.o: ..\..\Utilities\utility.h
+.\output\i2c_io.o: ..\..\W5500\types.h

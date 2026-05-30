@@ -1,6 +1,6 @@
 #include "Board.h"
 
-
+extern void put_test_data_queue(uint8_t *data,int len,uint8_t type);
 
 void init_rs485()
 {

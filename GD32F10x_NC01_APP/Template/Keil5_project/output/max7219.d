@@ -33,3 +33,5 @@
 .\output\max7219.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\output\max7219.o: ..\..\Firmware\GD32F10x_standard_peripheral\Include\gd32f10x_misc.h
 .\output\max7219.o: ..\..\max7219\max7219.h
+.\output\max7219.o: ..\..\Utilities\utility.h
+.\output\max7219.o: ..\..\W5500\types.h
